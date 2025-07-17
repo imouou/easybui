@@ -1,0 +1,385 @@
+<style>
+    .bui-navbar {
+        border: 0;
+        padding: .2rem;
+        background: #fff;
+    }
+
+    .bui-navbar .bui-nav {
+        border: 0;
+    }
+
+    .bui-navbar .bui-nav .bui-btn {
+        border: 1px solid #89a65d;
+        padding: .1rem .1rem;
+        font-size: .2rem;
+    }
+
+    .bui-navbar .bui-nav .bui-btn.active {
+        background: #89a65d;
+        color: #fff;
+    }
+
+    .bui-navbar .bui-nav .bui-btn.active:after {
+        height: 0;
+    }
+
+    .bui-panel-head {
+        border: 0;
+    }
+
+    .bui-list-thumbnail h3 {
+        margin-bottom: .1rem;
+    }
+
+    .price em {
+        font-size: .16rem;
+        font-style: normal;
+    }
+
+    .bui-btn-add {
+        width: .5rem;
+        height: .5rem;
+        line-height: .5rem;
+        padding: 0;
+    }
+
+    .bui-btn-add i {
+        font-weight: bold;
+        margin-top: -0.1rem;
+    }
+
+    .bui-number-onlyplus {
+        width: .5rem;
+        height: .5rem;
+        border-radius: 0;
+        border: 0;
+    }
+
+    .bui-number-onlyplus .bui-number-next {
+        background-color: #89a65d;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 100px;
+    }
+
+    .bui-number-onlyplus .bui-number-prev {
+        display: none;
+    }
+
+    .bui-number-onlyplus input {
+        display: none;
+    }
+
+    .bui-panel {
+        margin-top: 0;
+    }
+
+    .bui-panel-head {
+        display: none;
+    }
+
+    .bui-floor-foot {
+        height: 150px;
+    }
+</style>
+<div class="floorlist">
+    <!-- 菜单 html 对应的结构: -->
+    <div class="bui-navbar bui-position-top">
+        <ul class="bui-nav">
+            <li class="bui-btn ring active">全部</li>
+            <li class="bui-btn ring">苏菜</li>
+            <li class="bui-btn ring">鲁菜</li>
+            <li class="bui-btn ring">川菜</li>
+            <li class="bui-btn ring">粤菜</li>
+            <li class="bui-btn ring">浙菜</li>
+            <li class="bui-btn ring">潮菜</li>
+        </ul>
+    </div>
+    <!-- 楼层 html 对应的结构: -->
+    <div class="bui-floor">
+        <div class="bui-floor-main container-y">
+            <!-- 全部预留结构 -->
+            <div class="bui-panel bui-floor-item" style="margin-bottom: .5rem;">
+            </div>
+
+            <!-- 苏菜 -->
+            <div class="bui-panel bui-floor-item">
+                <!-- 预留分类名结构 -->
+                <div class="bui-panel-head"></div>
+                <div class="bui-panel-main">
+                    <ul class="bui-list bui-list-thumbnail">
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span></p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i></div>
+                                            <input id="goods1" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span></p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i></div>
+                                            <input id="goods2" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 苏菜 -->
+            <div class="bui-panel bui-floor-item">
+                <!-- 预留分类名结构 -->
+                <div class="bui-panel-head"></div>
+                <div class="bui-panel-main">
+                    <ul class="bui-list bui-list-thumbnail">
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span></p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i></div>
+                                            <input id="goods3" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 苏菜 -->
+            <div class="bui-panel bui-floor-item">
+                <!-- 预留分类名结构 -->
+                <div class="bui-panel-head"></div>
+                <div class="bui-panel-main">
+                    <ul class="bui-list bui-list-thumbnail">
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span></p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i></div>
+                                            <input id="goods4" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 苏菜 -->
+            <div class="bui-panel bui-floor-item">
+                <!-- 预留分类名结构 -->
+                <div class="bui-panel-head"></div>
+                <div class="bui-panel-main">
+                    <ul class="bui-list bui-list-thumbnail">
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span></p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i></div>
+                                            <input id="goods5" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 苏菜 -->
+            <div class="bui-panel bui-floor-item">
+                <!-- 预留分类名结构 -->
+                <div class="bui-panel-head"></div>
+                <div class="bui-panel-main">
+                    <ul class="bui-list bui-list-thumbnail">
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span></p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i>
+                                            </div>
+                                            <input id="goods6" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 苏菜 -->
+            <div class="bui-panel bui-floor-item">
+                <!-- 预留分类名结构 -->
+                <div class="bui-panel-head"></div>
+                <div class="bui-panel-main">
+                    <ul class="bui-list bui-list-thumbnail">
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span></p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i>
+                                            </div>
+                                            <input id="goods7" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 苏菜 -->
+            <div class="bui-panel bui-floor-item">
+                <!-- 预留分类名结构 -->
+                <div class="bui-panel-head"></div>
+                <div class="bui-panel-main">
+                    <ul class="bui-list bui-list-thumbnail">
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span></p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i></div>
+                                            <input id="goods8" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 苏菜 -->
+            <div class="bui-panel bui-floor-item">
+                <!-- 预留分类名结构 -->
+                <div class="bui-panel-head"></div>
+                <div class="bui-panel-main">
+                    <ul class="bui-list bui-list-thumbnail">
+                        <li class="bui-btn bui-box-align-top clearactive">
+                            <div class="bui-thumbnail"><img src="images/img.svg" alt="">
+                            </div>
+                            <div class="span1">
+                                <h3 class="item-title">牛肉饭</h3>
+                                <p class="item-text"><span class="bui-tag ring">7.5折</span>
+                                </p>
+                                <p class="item-text">描述信息</p>
+
+                                <div class="item-text bui-box">
+                                    <span class="price"><em>¥</em><strong>20</strong></span>
+                                    <div class="span1">
+                                    </div>
+                                    <div class="numberbar">
+                                        <div class="bui-number ring bui-number-onlyplus">
+                                            <div class="bui-number-prev"><i class="icon-minus"></i></div>
+                                            <input id="goods9" class="bui-number-input" type="text" name="bui93932-b317-6961-501e-3d1b62cfeab8" value="0" min="0" max="100" data-price="20" data-title="牛肉饭" step="1">
+                                            <div class="bui-number-next"><i class="icon-plus"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="bui-floor-foot bui-align-center">
+            滑到底释放看下一分类
+        </div>
+    </div>
+</div>

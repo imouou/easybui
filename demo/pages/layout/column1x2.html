@@ -1,0 +1,45 @@
+<style>
+    /* 示例样式效果，开发中不需要 */
+    .bui-box-vertical,
+    .bui-box {
+        height: 100%;
+    }
+
+    .bui-box>* {
+        height: 100%;
+        padding: .1rem;
+    }
+
+    .bui-box .span1:nth-child(1) {
+        background: #e1e1e1;
+    }
+
+    .bui-box .span1:nth-child(2) {
+        background: #ccc;
+    }
+</style>
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">1x2布局</div>
+            <div class="bui-bar-right">
+                <!-- 右边按钮 -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bui-box">
+            <div class="span1">1</div>
+            <div class="span1">
+                <!-- 右边上下平分 -->
+                <div class="bui-box-vertical">
+                    <div class="span1">1</div>
+                    <div class="span1">2</div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

@@ -1,0 +1,37 @@
+<style>
+    .compblock {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+</style>
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">分类购买</div>
+            <div class="bui-bar-right">
+                <!-- 右边按钮 -->
+            </div>
+        </div>
+
+        <ul class="bui-list bui-list-thumbnail">
+            <li class="bui-btn bui-box">
+                <div class="bui-thumbnail"><img src="images/img.svg" alt=""></div>
+                <div class="span1">
+                    <h3 class="item-title">商家信息</h3>
+                    <p class="item-text">天河区岑村</p>
+                    <p class="item-text">3公里</p>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main style="overflow: hidden;">
+        <component id="categoryComp" class="compblock"></component>
+    </main>
+    <footer>
+        <div class="bui-btn"><i class="icon">&#xe631;<span class="bui-badges" b-text="page.shoppingcart.length"></span></i></div>
+    </footer>
+</div>

@@ -1,0 +1,68 @@
+<!-- 这里还是一个标准的BUI页面 -->
+<div class="bui-page">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn btn-back"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">单页路由</div>
+        <div class="bui-bar-right"></div>
+    </header>
+    <main class="bui-interval">
+
+        <ul class="bui-list">
+            <li class="bui-btn bui-box" href="pages/router/router-link/index.html">
+                <div class="span1">当前路由激活状态</div>
+                <span class="bui-badges">新</span>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/load/load.html?id=123">
+                <div class="span1">跳转页面+传参</div>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/getPageParams/index.html" param='{"page":"pages/router/index"}'>
+                <div class="span1">接收参数</div>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/refresh/refresh.html">
+                <div class="span1">刷新页面</div>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/replace/replace.html">
+                <div class="span1">替换页面</div>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/back/back.html">
+                <div class="span1">后退及刷新页面</div>
+                <span id="badges" class="bui-badges">9</span>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/option/option.html">
+                <div class="span1">常用切换效果</div>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/event/event.html">
+                <div class="span1">路由全局事件</div>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/life/life.html?id=123">
+                <div class="span1">生命周期</div>
+                <span class="bui-badges">新</span>
+                <i class="icon-listright"></i>
+            </li>
+        </ul>
+        <ul class="bui-list">
+            <li class="bui-btn bui-box btn-iframe">
+                <div class="span1">加载外部地址</div>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box" href="pages/router/iframe/iframe.html">
+                <div class="span1">保留头部外部地址</div>
+                <i class="icon-listright"></i>
+            </li>
+            <li class="bui-btn bui-box btn-go">
+                <div class="span1">跳转外部地址</div>
+                <i class="icon-listright"></i>
+            </li>
+        </ul>
+    </main>
+</div>

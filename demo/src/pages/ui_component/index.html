@@ -1,0 +1,66 @@
+<style>
+    .bui-accordion dd {
+        padding-left: .5rem;
+    }
+</style>
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main" b-click="page.getComp">组件化</div>
+            <div class="bui-bar-right">
+            </div>
+        </div>
+    </header>
+    <main class="bui-interval">
+
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">组件开发方式</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/ui_component/component_sync.html">
+                        <div class="span1">组件同步交互-从上到下加载</div>
+                        <div class="bui-tag ring success">推荐</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_component/component_delay.html">
+                        <div class="span1">组件异步交互-按需加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_component/component_module.html">
+                        <div class="span1">组件+模块-抽离模板或复杂业务</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">组件用途</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/components/list/index.html?imageWidth=3rem">
+                        <div class="span1">组件独立展示预览</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_component/component_tab.html">
+                        <div class="span1">组件+TAB-按需加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_component/component_page.html">
+                        <div class="span1">组件+弹窗-按需加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+
+    </main>
+</div>

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>BUI</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no,viewport-fit=cover">
+    <link rel="stylesheet" href="../css/bui.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+        .bui-router-active {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bui-btn" href="pages/ui_controls/bui.accordion.html">按钮</div>
+
+    <ul class="bui-list bui-box-flex">
+        <li class="bui-btn bui-box" href="/mpa.html" router-link>
+            <i class="icon">&#xe622;</i>
+            <div class="span1">首页</div>
+        </li>
+        <li class="bui-btn bui-box" href="/mpa2.html?id=1321" router-link>
+            <i class="icon">&#xe622;</i>
+            <div class="span1">底部选项卡</div>
+        </li>
+        <li class="bui-btn bui-box" href="/pages/mpa3.html" router-link>
+            <i class="icon">&#xe622;</i>
+            <div class="span1">下一层</div>
+        </li>
+    </ul>
+    <script src="../js/zepto.js"></script>
+    <script src="../js/bui.js"></script>
+    <script>
+        bui.ready(function() {
+            // 业务及控件初始化
+
+            bui.btn({
+                id: "body",
+                handle: ".bui-btn"
+            }).load();
+        })
+    </script>
+</body>
+
+</html>

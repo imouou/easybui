@@ -1,0 +1,55 @@
+<!-- 这里还是一个标准的BUI页面 -->
+<div class="bui-page">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn btn-back"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">接收参数</div>
+        <div class="bui-bar-right"></div>
+    </header>
+    <main>
+        <h3 class="section-title">1.7.x module.props</h3>
+
+        <div class="bui-panel">
+            <div class="bui-panel-head">示例:</div>
+            <div class="bui-panel-main">
+                <div class="container">
+                    <xmp>
+                        // 1.7.x
+                        var props = module.props;
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <h3 class="section-title">1.6.x bui.history.getParams();</h3>
+
+        <div class="bui-panel">
+            <div class="bui-panel-head">示例:</div>
+            <div class="bui-panel-main">
+                <div class="container">
+                    <xmp>
+                        // 1.6.x:
+                        var props = bui.history.getParams();
+
+                    </xmp>
+                </div>
+            </div>
+        </div>
+        <h3 class="section-title">1.5.x bui.getPageParams();</h3>
+
+        <div class="bui-panel">
+            <div class="bui-panel-head">示例:</div>
+            <div class="bui-panel-main">
+                <div class="container">
+                    <xmp>
+                        // 1.5.x
+                        var getParams = bui.getPageParams();
+                        getParams.done(function(res){
+                        console.log(res)
+                        })
+                    </xmp>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>

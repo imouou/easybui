@@ -1,0 +1,41 @@
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">switch权限判断</div>
+            <div class="bui-bar-right">
+                <!-- 右边按钮 -->
+            </div>
+        </div>
+    </header>
+    <main>
+        1.9.0 才支持
+        <div b-switch="(page.role)">
+            <div b-case="1">
+                role=1
+            </div>
+            <div b-case="2">
+                role=2
+            </div>
+            <div b-case="3">
+                role=3
+            </div>
+            <div b-default>
+                role>3
+            </div>
+        </div>
+        <br> <!-- 正文内容 -->
+    </main>
+    <footer class="container-xy">
+        <div class="bui-box space">
+            <div class="span1">
+                <div class="bui-btn ring danger" b-click="page.reset">重置清零</div>
+            </div>
+            <div class="span1">
+                <div class="bui-btn ring primary" b-click="page.add">点击增加 role:<b b-text="page.role"></b></div>
+            </div>
+        </div>
+    </footer>
+</div>

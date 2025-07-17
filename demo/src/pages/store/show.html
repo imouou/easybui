@@ -1,0 +1,17 @@
+<div class="bui-page page-store">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">显示隐藏</div>
+        <div class="bui-bar-right">
+        </div>
+    </header>
+    <main class="container-xy">
+
+        点击切换状态<input type="checkbox" class="bui-checkbox" name="" value="" b-model="page.show">
+
+        <div b-show="page.show">展示文字</div>
+        <div b-show="!page.show">隐藏文字</div>
+    </main>
+</div>

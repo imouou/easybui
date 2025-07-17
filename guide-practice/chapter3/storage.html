@@ -1,0 +1,669 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>11. 数据存储 · BUI最佳实践</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="王小o - imouou">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../static/css/gitbook.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="login.html" />
+    
+    
+    <link rel="prev" href="form.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"imouou","repo":"BUI-Guide","type":"star","count":true,"size":"small"},{"user":"imouou","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    实战案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    一、创建一个应用
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="create.html">
+            
+                <a href="create.html">
+            
+                    
+                    1. 创建工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="createpage.html">
+            
+                <a href="createpage.html">
+            
+                    
+                    2. 创建新页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="router.html">
+            
+                <a href="router.html">
+            
+                    
+                    3. 跳转与传参
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    4. 数据请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="global.html">
+            
+                <a href="global.html">
+            
+                    
+                    5. 公共方法与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    6. 跨域调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="buifast.html">
+            
+                <a href="buifast.html">
+            
+                    
+                    7. 提高效率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="control.html">
+            
+                <a href="control.html">
+            
+                    
+                    8. 控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="component.html">
+            
+                <a href="component.html">
+            
+                    
+                    9. 组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="form.html">
+            
+                <a href="form.html">
+            
+                    
+                    10. 表单与校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.5" data-path="storage.html">
+            
+                <a href="storage.html">
+            
+                    
+                    11. 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="login.html">
+            
+                <a href="login.html">
+            
+                    
+                    12. 登录权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="import.html">
+            
+                <a href="import.html">
+            
+                    
+                    13. 第三方插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="package.html">
+            
+                <a href="package.html">
+            
+                    
+                    14. 打包部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="update.html">
+            
+                <a href="update.html">
+            
+                    
+                    15. 版本升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >11. 数据存储</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6570;&#x636E;&#x5B58;&#x50A8;"><b></b>&#x6570;&#x636E;&#x5B58;&#x50A8;</a></li><ul><li><span class="title-icon "></span><a href="#&#x5B58;&#x50A8;&#x6570;&#x636E;"><b></b>&#x5B58;&#x50A8;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x5B58;&#x50A8;&#x591A;&#x6761;&#x6570;&#x636E;"><b></b>&#x5B58;&#x50A8;&#x591A;&#x6761;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x83B7;&#x53D6;&#x6570;&#x636E;"><b></b>&#x83B7;&#x53D6;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x5220;&#x9664;&#x6570;&#x636E;"><b></b>&#x5220;&#x9664;&#x6570;&#x636E;</a></li><li><span class="title-icon "></span><a href="#&#x7F13;&#x5B58;&#x6848;&#x4F8B;"><b></b>&#x7F13;&#x5B58;&#x6848;&#x4F8B;</a></li></ul></ul></div><a href="#&#x6570;&#x636E;&#x5B58;&#x50A8;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6570;&#x636E;&#x5B58;&#x50A8;"><a name="&#x6570;&#x636E;&#x5B58;&#x50A8;" class="anchor-navigation-ex-anchor" href="#&#x6570;&#x636E;&#x5B58;&#x50A8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6570;&#x636E;&#x5B58;&#x50A8;</h1>
+<blockquote>
+<p>bui.storage &#x662F;&#x57FA;&#x4E8E; localStorage&#xFF0C;sessionStorage &#x5C01;&#x88C5;&#x7684;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;&#x53CA;&#x591A;&#x6761;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5;&#x5E93;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5B58;&#x50A8;&#x6570;&#x636E;"><a name="&#x5B58;&#x50A8;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x50A8;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B58;&#x50A8;&#x6570;&#x636E;</h2>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x521D;&#x59CB;&#x5316;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;localstorage&#x4FDD;&#x5B58;&#x4E00;&#x6761;&#x6570;&#x636E;</span>
+<span class="token keyword">const</span> uiStorage <span class="token operator">=</span> bui<span class="token punctuation">.</span><span class="token function">storage</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+uiStorage<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">&quot;bui&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x5B58;&#x50A8;&#x591A;&#x6761;&#x6570;&#x636E;"><a name="&#x5B58;&#x50A8;&#x591A;&#x6761;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x5B58;&#x50A8;&#x591A;&#x6761;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5B58;&#x50A8;&#x591A;&#x6761;&#x6570;&#x636E;</h2>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x53EF;&#x4EE5;&#x5B58;2&#x6761;&#x6570;&#x636E;&#xFF0C;&#x5927;&#x4E8E;2&#x5219;&#x8986;&#x76D6;&#x6700;&#x5148;&#x5B58;&#x50A8;&#x7684;&#x4E00;&#x6761;&#x6570;&#x636E;</span>
+<span class="token keyword">const</span> uiStorage <span class="token operator">=</span> bui<span class="token punctuation">.</span><span class="token function">storage</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">size</span><span class="token operator">:</span> <span class="token number">2</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5B58;&#x50A8;&#x7B2C;1&#x6761;</span>
+uiStorage<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">&quot;wangxiaoo&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x5B58;&#x50A8;&#x7B2C;2&#x6761;</span>
+uiStorage<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">&quot;bui&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x5B58;&#x50A8;&#x7B2C;3&#x6761;, username:&quot;wangxiaoo&quot; &#x4F1A;&#x5220;&#x9664;&#xFF0C;&#x53D8;&#x6210;&#x7B2C;&#x4E00;&#x6761;&#x6570;&#x636E;&#x4E3A; username:&quot;bui&quot;</span>
+uiStorage<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">&quot;easybui&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x83B7;&#x53D6;&#x6570;&#x636E;"><a name="&#x83B7;&#x53D6;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x83B7;&#x53D6;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x83B7;&#x53D6;&#x6570;&#x636E;</h2>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x83B7;&#x53D6;&#x5230;&#x6570;&#x7EC4;</span>
+<span class="token keyword">let</span> uinfos <span class="token operator">=</span> uiStorage<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x83B7;&#x53D6;&#x7B2C;&#x4E00;&#x6761;&#x6570;&#x636E;</span>
+<span class="token keyword">let</span> uinfo <span class="token operator">=</span> uiStorage<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x5220;&#x9664;&#x6570;&#x636E;"><a name="&#x5220;&#x9664;&#x6570;&#x636E;" class="anchor-navigation-ex-anchor" href="#&#x5220;&#x9664;&#x6570;&#x636E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5220;&#x9664;&#x6570;&#x636E;</h2>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x5220;&#x9664;&#x7B2C;&#x4E00;&#x6761;&#x6570;&#x636E;</span>
+uiStorage<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5220;&#x9664;&#x6574;&#x4E2A;&#x5B57;&#x6BB5;</span>
+uiStorage<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x7F13;&#x5B58;&#x6848;&#x4F8B;"><a name="&#x7F13;&#x5B58;&#x6848;&#x4F8B;" class="anchor-navigation-ex-anchor" href="#&#x7F13;&#x5B58;&#x6848;&#x4F8B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7F13;&#x5B58;&#x6848;&#x4F8B;</h2>
+<p><strong>&#x6548;&#x679C;&#x9884;&#x89C8;</strong></p>
+<p><img src="../static/images/template/login.png" alt="&#x9884;&#x89C8;&#x56FE;"></p>
+<p>&#x65B0;&#x589E;&#x4E00;&#x4E2A;&#x767B;&#x5F55;&#x9875;&#xFF0C;&#x589E;&#x52A0;&#x767B;&#x5F55;&#x7F13;&#x5B58;&#x529F;&#x80FD;&#x3002;</p>
+<p><em>pages/login/login.html</em></p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>loginpage<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-page bui-box-vertical<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ul</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-list<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-btn bui-box clearactive<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x5E10;&#x53F7;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>span1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+            <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>text<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-input<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>&#x8BF7;&#x8F93;&#x5165;&#x90AE;&#x7BB1;@qq.com<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">b-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form.datas.username<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-btn bui-box clearactive<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x5BC6;&#x7801;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>span1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+            <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>password<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-input<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>&#x8BF7;&#x8F93;&#x5165;&#x5BC6;&#x7801;<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">b-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form.datas.password<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>li</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-btn bui-box clearactive<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-label<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x4FDD;&#x5B58;&#x5BC6;&#x7801;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>span1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span>
+            <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>checkbox<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-checkbox<span class="token punctuation">&quot;</span></span>
+            <span class="token attr-name">b-model</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form.datas.save<span class="token punctuation">&quot;</span></span>
+          <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>li</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ul</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>container-y<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-box-space<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>span1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-btn round primary<span class="token punctuation">&quot;</span></span> <span class="token attr-name">b-click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>form.submit<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x767B;&#x5F55;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p><em>pages/login/login.js</em></p>
+<pre class="language-"><code class="lang-js">loader<span class="token punctuation">.</span><span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">requires<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> module<span class="token punctuation">,</span> global</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x884C;&#x4E3A;&#x5B58;&#x50A8;</span>
+  <span class="token keyword">const</span> bs <span class="token operator">=</span> bui<span class="token punctuation">.</span><span class="token function">store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">el</span><span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">#loginpage</span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span> <span class="token comment">// &#x5BB9;&#x5668;&#x4E0B;&#x7684;&#x884C;&#x4E3A;&#x6307;&#x4EE4;</span>
+    <span class="token literal-property property">scope</span><span class="token operator">:</span> <span class="token string">&quot;form&quot;</span><span class="token punctuation">,</span> <span class="token comment">// &#x5BB9;&#x5668;&#x4E0B;&#x7684;&#x76F8;&#x540C;&#x4F5C;&#x7528;&#x57DF;&#x6307;&#x4EE4;</span>
+    <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">datas</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">username</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// &#x8D26;&#x53F7;&#x540D;</span>
+        <span class="token literal-property property">password</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token comment">// &#x5BC6;&#x7801;</span>
+        <span class="token literal-property property">save</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">//&#x4FDD;&#x5B58;&#x5BC6;&#x7801;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">methods</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token function">savePassword</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// &#x4FDD;&#x5B58;&#x5BC6;&#x7801;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$data<span class="token punctuation">.</span>datas<span class="token punctuation">.</span>save<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+          global<span class="token punctuation">.</span>storage<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">,</span> val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+          global<span class="token punctuation">.</span>storage<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        bui
+          <span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            <span class="token literal-property property">url</span><span class="token operator">:</span> global<span class="token punctuation">.</span>apiurl <span class="token operator">+</span> <span class="token string">&quot;json/token.json&quot;</span><span class="token punctuation">,</span>
+            <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token keyword">this</span><span class="token punctuation">.</span>datas<span class="token punctuation">,</span> <span class="token comment">// &#x8868;&#x5355;&#x6536;&#x96C6;&#x5230;&#x7684;&#x5185;&#x5BB9;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            bui<span class="token punctuation">.</span><span class="token function">hint</span><span class="token punctuation">(</span><span class="token string">&quot;&#x767B;&#x5F55;&#x6210;&#x529F;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// &#x6210;&#x529F;&#x7684;&#x8D26;&#x53F7;&#x624D;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x5BC6;&#x7801;&#xFF0C;&#x4E14;&#x5BC6;&#x7801;&#x5E94;&#x8BE5;&#x4F7F;&#x7528;md5&#x4E4B;&#x7C7B;&#x7684;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x518D;&#x5B58;&#x50A8;&#x5230;&#x672C;&#x5730;</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">savePassword</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>$data<span class="token punctuation">.</span>datas<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// &#x4FDD;&#x5B58;token</span>
+            global<span class="token punctuation">.</span>storage<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string">&quot;token&quot;</span><span class="token punctuation">,</span> res<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// &#x8DF3;&#x8F6C;&#x9996;&#x9875;</span>
+            bui<span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+              <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&quot;main&quot;</span><span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">templates</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function-variable function">mounted</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// &#x83B7;&#x53D6;&#x672C;&#x5730;&#x7F13;&#x5B58;</span>
+      <span class="token keyword">let</span> uinfo <span class="token operator">=</span> global<span class="token punctuation">.</span>storage<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">&quot;userinfo&quot;</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token comment">// &#x5982;&#x679C;&#x6709;&#x7F13;&#x5B58;&#x6570;&#x636E;&#xFF0C;&#x5219;&#x8D4B;&#x503C;</span>
+      <span class="token keyword">typeof</span> uinfo <span class="token operator">===</span> <span class="token string">&quot;object&quot;</span> <span class="token operator">&amp;&amp;</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>datas <span class="token operator">=</span> uinfo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> bs<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x628A; storage &#x653E;&#x5728;&#x4E86; global.js &#x7684;&#x516C;&#x5171;&#x65B9;&#x6CD5;&#x91CC;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; global.storage &#x8C03;&#x7528;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x8BF7;&#x67E5;&#x770B;&#x6574;&#x4E2A;&#x6848;&#x4F8B;&#x3002;</p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9;2017-2022 easybui.com all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-04-25 14:36:43
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="form.html" class="navigation navigation-prev " aria-label="Previous page: 10. 表单与校验">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="login.html" class="navigation navigation-next " aria-label="Next page: 12. 登录权限">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"11. 数据存储","level":"1.4.5","depth":2,"next":{"title":"12. 登录权限","level":"1.4.6","depth":2,"path":"chapter3/login.md","ref":"chapter3/login.md","articles":[]},"previous":{"title":"10. 表单与校验","level":"1.4.4","depth":2,"path":"chapter3/form.md","ref":"chapter3/form.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","chapter-fold"],"styles":{"website":"./static/css/gitbook.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy2017-2022 easybui.com","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.min.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"6781b936303667306495d5d92ad58add"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"imouou","repo":"BUI-Guide","type":"star","count":true,"size":"small"},{"user":"imouou","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"王小o - imouou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"BUI最佳实践","language":"zh-hans","gitbook":"*","description":"本文将通过创建一个新应用的方式，涵盖整个应用的开发，`数据请求，接口跨域，模板渲染，store，表单校验，全局方法，数据存储，登录权限，路由传参，自定义组件及传参`等，带您快速了解BUI的基本使用，建议按步骤一步步操作，文档中有不理解或者错误的地方，请通过帮助提问反馈，谢谢。"},"file":{"path":"chapter3/storage.md","mtime":"2022-04-25T06:36:43.472Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-06T09:28:24.761Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

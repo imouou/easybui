@@ -1,0 +1,198 @@
+.bui-calendar-head {
+    font-size: .22rem;
+    padding: 0.2rem 0.1rem;
+}
+
+.bui-calendar-holiday {
+    color: #78A942;
+}
+
+.bui-calendar-holiday-1 .bui-calendar-date-head,
+.bui-calendar-holiday-1 .bui-calendar-date-foot {
+    color: #78A942;
+}
+
+.bui-calendar-display-after .bui-calendar-date-less {
+    color: #ccc;
+}
+
+.bui-calendar-display-after .bui-calendar-date-less .bui-calendar-date-main {
+    color: #ccc;
+}
+
+.bui-calendar {
+    text-align: center;
+    height: 100%;
+}
+
+.bui-calendar .bui-calendar-main {
+    overflow-y: auto;
+}
+
+.bui-calendar .bui-calendar-month {
+    margin-bottom: .3rem;
+}
+
+.bui-calendar .bui-calendar-month-head {
+    background: #f8f8f8;
+    padding: 0.1rem 0.1rem;
+}
+
+.bui-calendar .bui-calendar-current {
+    background: #78A942;
+    color: #fff;
+}
+
+.bui-calendar .bui-calendar-current .bui-calendar-date-main {
+    color: #fff;
+}
+
+.bui-calendar .bui-calendar-date-equal.bui-calendar-current {
+    background: #78A942;
+    color: #fff;
+}
+
+.bui-calendar .bui-calendar-date-equal.bui-calendar-current .bui-calendar-date-main {
+    color: #fff;
+}
+
+.bui-calendar .bui-calendar-date-equal .bui-calendar-date-main {
+    color: #78A942;
+}
+
+.bui-calendar .bui-calendar-date.active.disabled.end,
+.bui-calendar .bui-calendar-date.active {
+    background: #aace83;
+    color: #fff;
+}
+
+.bui-calendar .bui-calendar-date.active.disabled.end.start,
+.bui-calendar .bui-calendar-date.active.disabled.end.end,
+.bui-calendar .bui-calendar-date.active.start,
+.bui-calendar .bui-calendar-date.active.end {
+    background: #78A942;
+}
+
+.bui-calendar .bui-calendar-date.active.disabled.end .bui-calendar-date-head,
+.bui-calendar .bui-calendar-date.active .bui-calendar-date-head {
+    color: #fff;
+}
+
+.bui-calendar .bui-calendar-date.active.disabled.end .bui-calendar-date-main,
+.bui-calendar .bui-calendar-date.active .bui-calendar-date-main {
+    color: #fff;
+}
+
+.bui-calendar .bui-calendar-date.active.disabled.end .bui-calendar-date-foot,
+.bui-calendar .bui-calendar-date.active .bui-calendar-date-foot {
+    color: #fff;
+}
+
+.bui-calendar .bui-calendar-date-equal.bui-calendar-current.active {
+    background: #78A942;
+    color: #ddd;
+}
+
+.bui-calendar .bui-calendar-date-equal.bui-calendar-current.active .bui-calendar-date-main {
+    color: #ddd;
+}
+
+.bui-calendar .bui-calendar-date.disabled {
+    background: #eee;
+    color: #ccc;
+}
+
+.bui-calendar .bui-calendar-date.disabled .bui-calendar-date-main {
+    color: #ccc;
+}
+
+.bui-calendar .bui-calendar-date-space,
+.bui-calendar .bui-calendar-date {
+    padding: 0.1rem;
+    margin-bottom: .1rem;
+}
+
+.bui-calendar .bui-calendar-date-foot,
+.bui-calendar .bui-calendar-date-main,
+.bui-calendar .bui-calendar-date-head {
+    display: block;
+}
+
+.bui-calendar .bui-calendar-date-foot,
+.bui-calendar .bui-calendar-date-head {
+    height: .3rem;
+    font-size: .18rem;
+    white-space: nowrap;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.bui-calendar .bui-calendar-date-main {
+    font-size: .32rem;
+    color: black;
+    height: .5rem;
+    line-height: .5rem;
+}
+
+.bui-calendar .bui-calendar-work {
+    color: black;
+}
+
+.bui-calendar .bui-calendar-empty {
+    display: none;
+}
+
+.bui-calendar em {
+    font-style: normal;
+}
+
+.bui-calendar strong {
+    color: #f9342a;
+    white-space: nowrap;
+}
+
+.bui-calendar .bui-calendar-current strong,
+.bui-calendar .active strong {
+    display: none;
+}
+
+.bui-calendar-showprice strong {
+    display: inline-block;
+}
+
+.bui-calendar-hideprice strong {
+    display: none;
+}
+
+.bui-dialog-calendar {
+    border-radius: .2rem .2rem 0 0;
+}
+
+.bui-dialog-calendar .bui-dialog-head {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.bui-dialog-calendar .bui-dialog-main {
+    position: relative;
+}
+
+.bui-dialog-calendar .bui-calendar-display-month {
+    height: 100% !important;
+}
+
+.bui-dialog-calendar .bui-calendar-display-month .bui-calendar-month {
+    height: 100% !important;
+}
+
+.bui-dialog-calendar .bui-calendar-head {
+    padding-top: .1rem;
+    padding-bottom: 0;
+}
+
+.bui-calendar-display-month .bui-calendar-month {
+    margin-bottom: 0;
+    height: 100% !important;
+}

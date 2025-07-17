@@ -1,0 +1,619 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6. 跨域调试 · BUI最佳实践</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="王小o - imouou">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../static/css/gitbook.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="global.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"imouou","repo":"BUI-Guide","type":"star","count":true,"size":"small"},{"user":"imouou","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    实战案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    一、创建一个应用
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="create.html">
+            
+                <a href="create.html">
+            
+                    
+                    1. 创建工程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="createpage.html">
+            
+                <a href="createpage.html">
+            
+                    
+                    2. 创建新页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="router.html">
+            
+                <a href="router.html">
+            
+                    
+                    3. 跳转与传参
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="ajax.html">
+            
+                <a href="ajax.html">
+            
+                    
+                    4. 数据请求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="global.html">
+            
+                <a href="global.html">
+            
+                    
+                    5. 公共方法与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="debug.html">
+            
+                <a href="debug.html">
+            
+                    
+                    6. 跨域调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="buifast.html">
+            
+                <a href="buifast.html">
+            
+                    
+                    7. 提高效率
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="control.html">
+            
+                <a href="control.html">
+            
+                    
+                    8. 控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="component.html">
+            
+                <a href="component.html">
+            
+                    
+                    9. 组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="form.html">
+            
+                <a href="form.html">
+            
+                    
+                    10. 表单与校验
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="storage.html">
+            
+                <a href="storage.html">
+            
+                    
+                    11. 数据存储
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="login.html">
+            
+                <a href="login.html">
+            
+                    
+                    12. 登录权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="import.html">
+            
+                <a href="import.html">
+            
+                    
+                    13. 第三方插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="package.html">
+            
+                <a href="package.html">
+            
+                    
+                    14. 打包部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="update.html">
+            
+                <a href="update.html">
+            
+                    
+                    15. 版本升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >6. 跨域调试</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x8DE8;&#x57DF;&#x8C03;&#x8BD5;"><b></b>&#x8DE8;&#x57DF;&#x8C03;&#x8BD5;</a></li><ul><li><span class="title-icon "></span><a href="#&#x63A5;&#x53E3;&#x8DE8;&#x57DF;&#x914D;&#x7F6E;"><b></b>&#x63A5;&#x53E3;&#x8DE8;&#x57DF;&#x914D;&#x7F6E;</a></li><li><span class="title-icon "></span><a href="#&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;"><b></b>&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;</a></li><li><span class="title-icon "></span><a href="#&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x9884;&#x89C8;"><b></b>&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x9884;&#x89C8;</a></li><li><span class="title-icon "></span><a href="#&#x5FAE;&#x4FE1;&#x8C03;&#x8BD5;&#x7F13;&#x5B58;"><b></b>&#x5FAE;&#x4FE1;&#x8C03;&#x8BD5;&#x7F13;&#x5B58;</a></li><ul><li><span class="title-icon "></span><a href="#&#x53BB;&#x9664;&#x811A;&#x672C;&#x7F13;&#x5B58;"><b></b>&#x53BB;&#x9664;&#x811A;&#x672C;&#x7F13;&#x5B58;</a></li></ul></ul></ul></div><a href="#&#x8DE8;&#x57DF;&#x8C03;&#x8BD5;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x8DE8;&#x57DF;&#x8C03;&#x8BD5;"><a name="&#x8DE8;&#x57DF;&#x8C03;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x8DE8;&#x57DF;&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8DE8;&#x57DF;&#x8C03;&#x8BD5;</h1>
+<h2 id="&#x63A5;&#x53E3;&#x8DE8;&#x57DF;&#x914D;&#x7F6E;"><a name="&#x63A5;&#x53E3;&#x8DE8;&#x57DF;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x63A5;&#x53E3;&#x8DE8;&#x57DF;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x63A5;&#x53E3;&#x8DE8;&#x57DF;&#x914D;&#x7F6E;</h2>
+<p><strong>1. &#x4FEE;&#x6539;&#x914D;&#x7F6E;</strong></p>
+<blockquote>
+<p>&#x5047;&#x8BBE;&#x8BF7;&#x6C42;&#x7684;&#x63A5;&#x53E3;&#x5730;&#x5740;&#x4E3A;: <a href="http://www.easybui.com/api/getDetail?id=123" target="_blank">http://www.easybui.com/api/getDetail?id=123</a></p>
+</blockquote>
+<p>&#x6253;&#x5F00;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x7684; <code>app.json</code>&#xFF0C;&#x91CC;&#x9762;&#x6709;&#x4E2A;&#x952E;&#x503C; <em>proxy</em> &#x7684;&#x5BF9;&#x8C61;&#x3002;</p>
+<pre class="language-"><code class="lang-js"><span class="token punctuation">{</span>
+<span class="token operator">...</span>
+<span class="token string-property property">&quot;proxy&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;/api&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token string-property property">&quot;target&quot;</span><span class="token operator">:</span> <span class="token string">&quot;http://www.easybui.com&quot;</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;changeOrigin&quot;</span><span class="token operator">:</span><span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token string-property property">&quot;ssl&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token operator">...</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p><code>&quot;/api&quot;</code>: &#x4E3A;&#x8BF7;&#x6C42;&#x63A5;&#x53E3;&#x7684;&#x4E8C;&#x7EA7;&#x76EE;&#x5F55;</p>
+<p><code>&quot;target&quot;: &quot;http://www.easybui.com&quot;</code>: &#x4E3A;&#x8BF7;&#x6C42;&#x63A5;&#x53E3;&#x7684;&#x57DF;&#x540D;&#x5730;&#x5740;</p>
+<p><strong>2. &#x4FEE;&#x6539;&#x8BF7;&#x6C42;&#x7684;&#x65B9;&#x6CD5;</strong></p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x4E00;&#x5B9A;&#x8981;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;url&#x662F; &quot;api/xxx&quot;, &#x4E0D;&#x80FD;&#x662F; &quot;/api/xxx&quot;</span>
+bui
+  <span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    <span class="token literal-property property">url</span><span class="token operator">:</span> <span class="token string">&quot;api/getDetail&quot;</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;123&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;:</strong> ajax &#x8BF7;&#x6C42;&#x7684;&#x65F6;&#x5019;&#x8BF7;&#x4F7F;&#x7528;<code>&#x76F8;&#x5BF9;&#x5DE5;&#x7A0B;&#x8DEF;&#x5F84;</code>,&#x8FD9;&#x6837;&#x4EE3;&#x7406;&#x624D;&#x4F1A;&#x6B63;&#x786E;&#x8F6C;&#x53D1;.</p>
+<p>&#x7ED3;&#x5408;&#x5168;&#x5C40;&#x914D;&#x7F6E;&#xFF0C;&#x53EF;&#x4EE5;&#x628A; url &#x524D;&#x90E8;&#x5206;&#x4F5C;&#x4E3A;&#x53D8;&#x91CF;&#x914D;&#x7F6E;&#x9879;, &#x8C03;&#x8BD5;&#x7684;&#x65F6;&#x5019;&#x4E3A;&#x7A7A;, &#x6253;&#x5305;&#x7684;&#x65F6;&#x5019;&#x518D;&#x6539;&#x4E3A;&#x6B63;&#x5F0F;&#x73AF;&#x5883;&#xFF0C;&#x6253;&#x5305;&#x540E;&#x6CA1;&#x6709;&#x8DE8;&#x57DF;&#x95EE;&#x9898;&#x3002;</p>
+</blockquote>
+<p><em>global.js</em></p>
+<pre class="language-"><code class="lang-js">loader<span class="token punctuation">.</span><span class="token function">global</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &#x672C;&#x5730;&#x8C03;&#x8BD5;&#x4E3A;&#x7A7A;&quot;&quot;&#xFF0C;&#x4F1A;&#x81EA;&#x52A8;&#x8F6C;&#x53D1;&#x5230;app.json&#x914D;&#x7F6E;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x6B63;&#x5F0F;&#x73AF;&#x5883;&#x4FEE;&#x6539;&#x4E3A;&#x63A5;&#x53E3;&#x57DF;&#x540D;&#xFF1A; http://www.easybui.com/</span>
+  <span class="token keyword">let</span> baseurl <span class="token operator">=</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">;</span>
+  <span class="token comment">// &#x6A21;&#x62DF;&#x8BF7;&#x6C42;&#x7684;&#x63A5;&#x53E3;</span>
+  <span class="token keyword">let</span> apiGetListUrl <span class="token operator">=</span> baseurl <span class="token operator">+</span> <span class="token string">&quot;api/getDetail/&quot;</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">api</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token literal-property property">getListUrl</span><span class="token operator">:</span> apiGetListUrl<span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><em>main.js</em></p>
+<pre class="language-"><code class="lang-js">loader<span class="token punctuation">.</span><span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">require<span class="token punctuation">,</span>exports<span class="token punctuation">,</span>module<span class="token punctuation">,</span>global</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+    <span class="token comment">// &#x8BF7;&#x6C42;</span>
+    global<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">url</span><span class="token operator">:</span> global<span class="token punctuation">.</span>api<span class="token punctuation">.</span>getListUrl
+        <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token literal-property property">id</span><span class="token operator">:</span><span class="token string">&quot;123&quot;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre>
+<blockquote>
+<p>&#x5173;&#x4E8E;&#x4EE3;&#x7406;&#x7684;&#x66F4;&#x591A;&#x914D;&#x7F6E;,&#x53EF;&#x4EE5;&#x67E5;&#x770B; <a href="https://www.npmjs.com/package/http-proxy-middleware" target="_blank">http-proxy-middleware</a> &#x7684;&#x4F7F;&#x7528;&#x8BF4;&#x660E;.</p>
+</blockquote>
+<h2 id="&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;"><a name="&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;" class="anchor-navigation-ex-anchor" href="#&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x8C03;&#x8BD5;</h2>
+<p>VConsole &#x662F;&#x5728;&#x624B;&#x673A;&#x7AEF;&#x8C03;&#x8BD5;&#x7684;&#x5229;&#x5668;&#xFF0C; 1.7.x &#x5DE5;&#x7A0B;&#x9ED8;&#x8BA4;&#x5185;&#x7F6E;&#x4E86;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x76F4;&#x63A5;&#x5F15;&#x5165;&#x5373;&#x53EF;&#x3002;</p>
+<p>&#x65B9;&#x6CD5; 1:</p>
+<p><em>src/index.js</em></p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x624B;&#x673A;&#x8C03;&#x8BD5;&#xFF0C;&#x6B63;&#x5F0F;&#x73AF;&#x5883;&#x8BF7;&#x81EA;&#x884C;&#x53BB;&#x6389;</span>
+<span class="token keyword">import</span> VConsole <span class="token keyword">from</span> <span class="token string">&quot;vconsole&quot;</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> vConsole <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">VConsole</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+bui<span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// &#x63A7;&#x4EF6;&#x521D;&#x59CB;&#x5316;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>&#x65B9;&#x6CD5; 2:</p>
+<p><em>src/index.html</em></p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>https://unpkg.com/vconsole@latest/dist/vconsole.min.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+  // VConsole will be exported to `window.VConsole` by default.
+  var vConsole = new window.VConsole();
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h2 id="&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x9884;&#x89C8;"><a name="&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x9884;&#x89C8;" class="anchor-navigation-ex-anchor" href="#&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x9884;&#x89C8;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x624B;&#x673A;&#x8FDC;&#x7A0B;&#x9884;&#x89C8;</h2>
+<p>&#x5047;&#x8BBE;&#x6253;&#x5F00;&#x7684;&#x9884;&#x89C8;&#x5730;&#x5740;&#x4E3A; <a href="http://localhost:3000" target="_blank">http://localhost:3000</a> &#xFF0C;&#x628A;<code>localhost</code>&#x6539;&#x6210; &#x60A8;&#x7684;&#x672C;&#x673A; IP <code>10.0.0.123</code>&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x626B;&#x7801;&#x9884;&#x89C8;&#xFF0C;&#x6216;&#x8005;&#x624B;&#x52A8;&#x8F93;&#x5165;&#x5730;&#x5740;&#x3002;</p>
+<h2 id="&#x5FAE;&#x4FE1;&#x8C03;&#x8BD5;&#x7F13;&#x5B58;"><a name="&#x5FAE;&#x4FE1;&#x8C03;&#x8BD5;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x5FAE;&#x4FE1;&#x8C03;&#x8BD5;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5FAE;&#x4FE1;&#x8C03;&#x8BD5;&#x7F13;&#x5B58;</h2>
+<blockquote>
+<p>&#x5FAE;&#x4FE1;&#x8C03;&#x8BD5;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x7684;&#x662F;,&#x5FAE;&#x4FE1;&#x91CC;&#x9762;&#x7684;&#x7F13;&#x5B58;&#x5F88;&#x4E25;&#x91CD;,&#x6BCF;&#x6B21;&#x4FEE;&#x6539;,&#x9700;&#x8981;&#x7ED9;&#x4FEE;&#x6539;&#x7684; js &#x5F15;&#x7528;,&#x540E;&#x9762;&#x589E;&#x52A0;<code>?t=&#x65F6;&#x95F4;&#x6233;</code>&#x4E4B;&#x7C7B;&#x7684;&#x65B9;&#x5F0F;,&#x6765;&#x786E;&#x4FDD;&#x811A;&#x672C;&#x7684;&#x66F4;&#x65B0;.</p>
+</blockquote>
+<h3 id="&#x53BB;&#x9664;&#x811A;&#x672C;&#x7F13;&#x5B58;"><a name="&#x53BB;&#x9664;&#x811A;&#x672C;&#x7F13;&#x5B58;" class="anchor-navigation-ex-anchor" href="#&#x53BB;&#x9664;&#x811A;&#x672C;&#x7F13;&#x5B58;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x53BB;&#x9664;&#x811A;&#x672C;&#x7F13;&#x5B58;</h3>
+<p><em>&#x4F8B;&#x5982;:</em></p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui.js?t=2016073101<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<blockquote>
+<p>&#x5355;&#x9875;&#x6A21;&#x5757;&#x5316;&#x5F00;&#x53D1;, &#x901A;&#x8FC7;&#x91CD;&#x65B0;&#x521D;&#x59CB;&#x5316;<code>window.loader</code>&#x8BBE;&#x7F6E;&#x7F13;&#x5B58;&#x53C2;&#x6570;&#x4E3A; false, &#x52A0;&#x8F7D;&#x7684;&#x6A21;&#x5757;&#x4FBF;&#x4F1A;&#x91C7;&#x7528;&#x65F6;&#x95F4;&#x6233;&#x7684;&#x65B9;&#x5F0F;&#x52A0;&#x8F7D;.</p>
+</blockquote>
+<p><em>src/index.js</em></p>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x8FD9;&#x884C;&#x4EE3;&#x7801;&#x5FC5;&#x987B;&#x5728;bui.ready &#x4E4B;&#x524D;</span>
+window<span class="token punctuation">.</span>loader <span class="token operator">=</span> bui<span class="token punctuation">.</span><span class="token function">loader</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">cache</span><span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+bui<span class="token punctuation">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9;2017-2022 easybui.com all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-04-25 14:27:45
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="global.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 5. 公共方法与配置">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6. 跨域调试","level":"1.3.6","depth":2,"next":{"title":"进阶","level":"1.4","depth":1,"ref":"","articles":[{"title":"7. 提高效率","level":"1.4.1","depth":2,"path":"chapter3/buifast.md","ref":"chapter3/buifast.md","articles":[]},{"title":"8. 控件","level":"1.4.2","depth":2,"path":"chapter3/control.md","ref":"chapter3/control.md","articles":[]},{"title":"9. 组件","level":"1.4.3","depth":2,"path":"chapter3/component.md","ref":"chapter3/component.md","articles":[]},{"title":"10. 表单与校验","level":"1.4.4","depth":2,"path":"chapter3/form.md","ref":"chapter3/form.md","articles":[]},{"title":"11. 数据存储","level":"1.4.5","depth":2,"path":"chapter3/storage.md","ref":"chapter3/storage.md","articles":[]},{"title":"12. 登录权限","level":"1.4.6","depth":2,"path":"chapter3/login.md","ref":"chapter3/login.md","articles":[]},{"title":"13. 第三方插件","level":"1.4.7","depth":2,"path":"chapter3/import.md","ref":"chapter3/import.md","articles":[]},{"title":"14. 打包部署","level":"1.4.8","depth":2,"path":"chapter3/package.md","ref":"chapter3/package.md","articles":[]},{"title":"15. 版本升级","level":"1.4.9","depth":2,"path":"chapter3/update.md","ref":"chapter3/update.md","articles":[]}]},"previous":{"title":"5. 公共方法与配置","level":"1.3.5","depth":2,"path":"chapter3/global.md","ref":"chapter3/global.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","chapter-fold"],"styles":{"website":"./static/css/gitbook.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy2017-2022 easybui.com","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.min.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"6781b936303667306495d5d92ad58add"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"imouou","repo":"BUI-Guide","type":"star","count":true,"size":"small"},{"user":"imouou","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"王小o - imouou","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"BUI最佳实践","language":"zh-hans","gitbook":"*","description":"本文将通过创建一个新应用的方式，涵盖整个应用的开发，`数据请求，接口跨域，模板渲染，store，表单校验，全局方法，数据存储，登录权限，路由传参，自定义组件及传参`等，带您快速了解BUI的基本使用，建议按步骤一步步操作，文档中有不理解或者错误的地方，请通过帮助提问反馈，谢谢。"},"file":{"path":"chapter3/debug.md","mtime":"2022-04-25T06:27:45.971Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-06T09:28:24.761Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

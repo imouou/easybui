@@ -1,0 +1,90 @@
+<style>
+    /* .bui-thumbnail2 img {
+        height: 100%;
+        object-fit: cover;
+    } */
+
+    .bui-thumbnail img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .bui-list .bui-btn,
+    .bui-list .bui-btn0,
+    .bui-list .bui-btn .span1 {
+        color: rgba(34, 108, 219, 1);
+        color: rgb(34, 108, 219);
+        transform: translate(10rem, 20px);
+        transform: translate(10px, -2px);
+        transform: translate(10px, -2px);
+        transform: translate(10px, 0px) translate(10px, 0px);
+        background: linear-gradient(180deg, rgba(187, 187, 187, 0.03) 0%, rgba(133, 133, 133, 0.77) 100%);
+    }
+
+    @import "demo.css";
+    @import url("demo1.css");
+    @supports (display: flex) {
+        .collapse1 {
+            width: 100%;
+            height: 1rem;
+            display: flex;
+        }
+    }
+
+    @keyframes anima {
+        0% {
+            transform: translateX(100%);
+        }
+
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    @media screen and (max-width: 320px) {
+
+        div,
+        div {
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            color: #78A942;
+            font-size: .28rem;
+            padding: 0 .2rem;
+            display: inline-block;
+        }
+
+        .collapse1 {
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            color: #78A942;
+            font-size: .28rem;
+            padding: 0 .2rem;
+            display: inline-block;
+        }
+
+        #module.id .collapse2 {
+            width: 100%;
+            height: 1rem;
+            line-height: 1rem;
+            color: #78A942;
+            font-size: .28rem;
+            padding: 0 .2rem;
+            display: inline-block;
+        }
+    }
+
+    .bui-thumbnail2 img {
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+<div class="bui-scroll fullheight">
+    <div class="bui-scroll-head"></div>
+    <div class="bui-scroll-main">
+        <ul class="bui-list">
+        </ul>
+    </div>
+    <div class="bui-scroll-foot"></div>
+</div>

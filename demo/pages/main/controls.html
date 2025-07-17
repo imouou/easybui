@@ -1,0 +1,401 @@
+<style>
+    .ercode {
+        margin-left: .2rem;
+    }
+
+    .bui-router-active {
+        color: red;
+    }
+
+    .bui-position-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .bui-position-top .bui-hint {
+        position: static;
+        transition: all .3s ease;
+    }
+</style>
+<div class="bui-page page-home bui-box-vertical">
+    <header>
+        <div class="bui-position-top">
+            <div class="inner"></div>
+        </div>
+        <div class="intro">
+            <h1>BUI</h1>
+            <div class="bui-box-align-top">
+                <div class="span1">
+                    <p>BUI 基于路径式组件，支持多页/单页路由开发，单/双向状态管理，高精度还原设计稿，适合开发定制化
+                        Webapp，打包App，轻应用，小程序，公众号，聆客，钉钉……</p>
+                    <p>Demo 包含300多个示例</p>
+                </div>
+                <div class="ercode">
+                    <img src="images/demo-ercode.png" alt="" style="width:2.4rem">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- 路由导航另外一种实现
+        <ul class="bui-list bui-box-flex">
+            <li class="bui-btn bui-router-active" href="main" router-link>
+                首页
+            </li>
+            <li class="bui-btn" href="pages/ui_controls/bui.tab_dynamic.html?id=1321" router-link>
+                底部选项卡
+            </li>
+            <li class="bui-btn" href="pages/ui_controls/bui.tab_side_dynamic" router-link>
+                侧边选项卡
+            </li>
+        </ul> -->
+    </header>
+    <main class="bui-interval">
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">选项卡</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.tab_head_dynamic.html">
+                        <div class="span1">顶部选项卡-按需加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.tab_dynamic.html">
+                        <div class="span1">底部选项卡-按需加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.tab_side_dynamic.html">
+                        <div class="span1">左侧选项卡-按需加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.tab_component.html">
+                        <div class="span1">选项卡+组件列表-按需加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.tab.html">
+                        <div class="span1">自定义选项卡-一次性加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.tab_foot_tab.html">
+                        <div class="span1">多层嵌套选项卡-一次性加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">列表类</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.pullrefresh.html">
+                        <div class="span1">下拉刷新</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.list.html">
+                        <div class="span1">下拉刷新及自动分页加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.listview.html">
+                        <div class="span1">侧滑交互列表</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.list_x.html">
+                        <div class="span1">横向滚动加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">轮播焦点图</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.slide.html">
+                        <div class="span1">焦点图</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.slide_title.html">
+                        <div class="span1">标题焦点图</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.slide_cross.html">
+                        <div class="span1">跨屏焦点图</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.slide_welcome.html">
+                        <div class="span1">欢迎引导页</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.slide_note.html">
+                        <div class="span1">滚动公告</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.slide_gallery.html">
+                        <div class="span1">相册</div>
+                        <span class="bui-badges">新</span>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">菜单类</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.accordion.html">
+                        <div class="span1">折叠菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.sidebar.html">
+                        <div class="span1">左侧侧滑菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.sidebar_double.html">
+                        <div class="span1">两侧侧滑菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.swipe_y.html">
+                        <div class="span1">上下抽屉菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.swipe_date.html">
+                        <div class="span1">日历模拟</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.swipe_scenes.html">
+                        <div class="span1">复杂嵌套</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">滚动交互</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.floor.html">
+                        <div class="span1">楼层交互</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.floor_top.html">
+                        <div class="span1">菜单置顶交互 </div>
+                        <span class="bui-badges">1.8.0</span>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.floor_scrollto.html">
+                        <div class="span1">通讯录交互</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.list_chat.html">
+                        <div class="span1">聊天交互-下拉加载更多历史</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.list_listview.html">
+                        <div class="span1">下拉刷新滚动加载+侧滑列表</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.scroll.html">
+                        <div class="span1">自定义滚动加载及刷新</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">弹出层交互</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.page.html">
+                        <div class="span1">弹窗组件加载器</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.mask.html">
+                        <div class="span1">遮罩</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.loading.html">
+                        <div class="span1">加载进度</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.actionsheet.html">
+                        <div class="span1">弹出菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.actionsheet_custom.html">
+                        <div class="span1">自定义弹出菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.dropdown.html">
+                        <div class="span1">下拉菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.dropdown_level.html">
+                        <div class="span1">下拉菜单联动</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.dropdown_tab.html">
+                        <div class="span1">二级下拉菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.dropdown_levelselect.html">
+                        <div class="span1">三级下拉菜单</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.select_level_popup.html">
+                        <div class="span1">动态加载层级选择</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.levelselect.html">
+                        <div class="span1">省市区层级选择</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.alert.html">
+                        <div class="span1">提醒框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.confirm.html">
+                        <div class="span1">确认框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.prompt.html">
+                        <div class="span1">弹出输入框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.dialog_time.html">
+                        <div class="span1">倒计时对话框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.dialog.html">
+                        <div class="span1">自定义对话框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.hint.html">
+                        <div class="span1">自动消失提示框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+        <dl class="bui-accordion">
+            <dt class="bui-btn bui-box">
+                <div class="span1">表单类</div>
+                <i class="icon-accordion"></i>
+            </dt>
+            <dd>
+                <ul class="bui-list">
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.searchbar.html">
+                        <div class="span1">搜索加载</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.searchbar_head.html">
+                        <div class="span1">头部搜索</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.stepbar.html">
+                        <div class="span1">步骤条</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.stepbar_line.html">
+                        <div class="span1">步骤条-横向</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui/btn.html">
+                        <div class="span1">按钮样式</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.btn">
+                        <div class="span1">按钮事件</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui/radio.html">
+                        <div class="span1">单选框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui/checkbox.html">
+                        <div class="span1">复选框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui/switch.html">
+                        <div class="span1">开关按钮</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui/range.html">
+                        <div class="span1">滑动条</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.input.html">
+                        <div class="span1">输入框</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.upload.html">
+                        <div class="span1">文件上传</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.select.html">
+                        <div class="span1">选择列表</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.select_popup.html">
+                        <div class="span1">选择列表弹出</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.select_level_popup.html">
+                        <div class="span1">选择列表联动选择自定义</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.levelselect.html">
+                        <div class="span1">级联选择-京东省市区</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.pickerdate.html">
+                        <div class="span1">日期选择</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.pickerdate_group.html">
+                        <div class="span1">开始结束日期</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.number.html">
+                        <div class="span1">数字选择</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.rating.html">
+                        <div class="span1">星级评分</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui/progress.html">
+                        <div class="span1">进度条</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                    <li class="bui-btn bui-box" href="pages/ui_controls/bui.accordion_panel.html">
+                        <div class="span1">过滤筛选</div>
+                        <i class="icon-listright"></i>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </main>
+</div>

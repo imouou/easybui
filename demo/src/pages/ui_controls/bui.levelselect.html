@@ -1,0 +1,53 @@
+<style>
+    .selected-val,
+    .selected-vals {
+        margin-right: .2rem;
+    }
+
+    #chooseCity2 .bui-input-text {
+        width: 1rem;
+    }
+</style>
+<div class="bui-page">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">京东省市区选择</div>
+        <div class="bui-bar-right">
+        </div>
+    </header>
+    <main>
+
+        <ul class="bui-list">
+            <li class="bui-btn bui-box clearactive">
+                <div class="bui-label">所在地区</div>
+                <div class="span1">
+                    <div id="chooseCity">请选择</div>
+                </div>
+            </li>
+        </ul>
+        <div class="subtitle">设置值 1.8.0支持绑定store</div>
+        <ul class="bui-list">
+            <li class="bui-btn bui-box clearactive">
+                <div class="bui-label">所在地区</div>
+                <div class="span1">
+                    <div id="chooseCity2" class="bui-box">
+
+                        <input type="text" class="bui-input-text" b-model="page.selectCity.0" readonly />
+                        <input type="text" class="bui-input-text" b-model="page.selectCity.1" readonly />
+                        <input type="text" class="bui-input-text" b-model="page.selectCity.2" readonly />
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="container-y">
+            <div class="bui-box-space">
+                <div class="span1">
+                    <div class="bui-btn round primary" id="getValue">取值</div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+</div>

@@ -1,0 +1,29 @@
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">待办事项</div>
+            <div class="bui-bar-right">
+            </div>
+        </div>
+        <!-- 搜索条控件结构 -->
+        <div class="bui-searchbar bui-box">
+            <div class="span1">
+                <div class="bui-input">
+                    <i class="icon-list">&#xe62d;</i>
+                    <input type="text" value="" placeholder="请输入待办" b-model="page.todoText" />
+                    <div class="bui-btn info round" b-click="page.addTodo">新增</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section-title">待办事项: <b b-text="page.todo.length"></b></div>
+        <!-- 数据关联的模板 -->
+        <ul b-template="page.tplTodo(page.todo)" class="bui-list">
+        </ul>
+
+    </main>
+</div>

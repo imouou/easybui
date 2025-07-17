@@ -1,0 +1,18 @@
+{
+    "Id": "BAEE4CE9-E3DF-4395-A87E-BF69F002C165",
+    "Name": "浏览器“联盟”！苹果/谷歌/Mozilla/微软合力解决 Web “互操作性”问题",
+    "ImgPath": null,
+    "TypeId": null,
+    "TypeNamme": "技术前沿",
+    "Sources": null,
+    "ExInforSources": "segmentfault",
+    "Content": "<h1>文章标题</h1> <h2>大标题</h2> <h3>章标题</h3> <h4>节标题</h4> <p>近日，四大浏览器制造商苹果（Apple）、谷歌（Google）、Mozilla 和微软（Microsoft）以及软件咨询公司博科（Bocoup）和伊加利亚（Igalia），已同意联手合作，致力于改善其网络浏览器的互操作性和用户体验，使 Web 设计技术在不同平台上的表现更加一致。 </p> <p><img src=\"images/browser.jpg\"></p> <p>该组织创建了一个名为 Interop 2022 的基准测试，该基准将“在15个关键领域改善网络开发体验”（这 15 个领域包括 Cascade Layers、Color Spaces and Functions 和 CSS 颜色函数功能、新的视窗单元、Scrolling 和子网格等），以评估不同供应商如何实施一些 web 标准，从而消除差异，该项目将重点关注涉及的四种浏览器：Safari、Chrome、Edge 和 Firefox。 </p>",
+    "RecommendNum": "0",
+    "ReadNum": "1",
+    "CreatedBy": "A5AEFEE9-EE64-48D9-852B-C1D7183E1800",
+    "CreatedDate": "/Date(1462951193900)/",
+    "LastUpdatedBy": null,
+    "LastUpdatedDate": null,
+    "IsCollect": "0",
+    "CommentsNum": "0"
+}

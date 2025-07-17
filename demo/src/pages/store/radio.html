@@ -1,0 +1,33 @@
+<style>
+    .page-checkbox .active {
+        color: red;
+    }
+</style>
+<div class="bui-page page-store page-checkbox">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">多选单选</div>
+        <div class="bui-bar-right">
+        </div>
+    </header>
+    <main>
+        <fieldset>
+            <legend>radio控制</legend>
+            <div class="section-title">radio控制 </div>
+            <p b-if="(page.radioshow==0)">if-0</p>
+            <p b-if="(page.radioshow==1)">if-1</p>
+
+            <p b-show="page.radioshow">show-1</p>
+
+            <h3>hide 有两种写法</h3>
+
+            <p b-show="!page.radioshow">1. b-show="!page.xxx" hide-0</p>
+            <p b-hide="page.radioshow">2. b-hide="page.xxx" hide-0</p>
+
+            <label><input type="radio" name="show" value="0" b-model="page.radioshow" />点击修改值: <span b-text="page.radioshow"></span></label>
+            <label><input type="radio" name="show" value="1" b-model="page.radioshow" />点击修改值: <span b-text="page.radioshow"></span></label>
+        </fieldset>
+    </main>
+</div>

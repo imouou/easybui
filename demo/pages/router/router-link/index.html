@@ -1,0 +1,28 @@
+<style>
+    .bui-router-active {
+        color: red;
+    }
+</style>
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">路由激活</div>
+            <div class="bui-bar-right">
+                <!-- 右边按钮 -->
+            </div>
+        </div>
+
+        <ul class="bui-nav">
+            <li class="bui-btn" router-link href="main">首页</li>
+            <li class="bui-btn" router-link href="pages/router/router-link/index.html">路由激活</li>
+        </ul>
+    </header>
+    <main>
+        <!-- 正文内容 -->
+        <ul class="bui-nav" b-template="page.tplNav(page.nav)">
+        </ul>
+    </main>
+</div>

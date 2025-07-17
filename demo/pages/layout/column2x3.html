@@ -1,0 +1,52 @@
+<style>
+    /* 示例样式效果，开发中不需要 */
+
+    .bui-fluid-3>* {
+        padding: .1rem;
+    }
+
+    .bui-fluid-3>*:nth-child(even) {
+        background: #f1f1f1;
+    }
+
+    .bui-fluid-3>*:nth-child(odd) {
+        background: #dfdfdf;
+    }
+</style>
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">2x3布局</div>
+            <div class="bui-bar-right">
+                <!-- 右边按钮 -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="subtitle">
+            div标签
+        </div>
+        <div class="bui-fluid-3">
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+        </div>
+        <div class="subtitle">
+            ul标签
+        </div>
+        <ul class="bui-fluid-3">
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+            <li>1</li>
+        </ul>
+    </main>
+</div>

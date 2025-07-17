@@ -1,0 +1,1033 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>动画交互 · BUI官方文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="王小o - imouou">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../static/css/gitbook.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="emitter.html" />
+    
+    
+    <link rel="prev" href="method.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"imouou","repo":"BUI-Guide","type":"star","count":true,"size":"small"},{"user":"imouou","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    BUI 官方文档 1.9.x
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    概述
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter1/quickstart.html">
+            
+                <a href="../chapter1/quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter1/dev.html">
+            
+                <a href="../chapter1/dev.html">
+            
+                    
+                    开发方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter1/standard.html">
+            
+                <a href="../chapter1/standard.html">
+            
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../chapter1/style.html">
+            
+                <a href="../chapter1/style.html">
+            
+                    
+                    样式规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../chapter1/layout.html">
+            
+                <a href="../chapter1/layout.html">
+            
+                    
+                    布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="controls.html">
+            
+                <a href="controls.html">
+            
+                    
+                    控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="template.html">
+            
+                <a href="template.html">
+            
+                    
+                    模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="module.html">
+            
+                <a href="module.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="component.html">
+            
+                <a href="component.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="router.html">
+            
+                <a href="router.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="history.html">
+            
+                <a href="history.html">
+            
+                    
+                    历史记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="communication.html">
+            
+                <a href="communication.html">
+            
+                    
+                    组件通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="page.html">
+            
+                <a href="page.html">
+            
+                    
+                    组件弹窗加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="life.html">
+            
+                <a href="life.html">
+            
+                    
+                    生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="loader.html">
+            
+                <a href="loader.html">
+            
+                    
+                    模块定义与加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="global.html">
+            
+                <a href="global.html">
+            
+                    
+                    公共方法与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="method.html">
+            
+                <a href="method.html">
+            
+                    
+                    常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.7" data-path="animate.html">
+            
+                <a href="animate.html">
+            
+                    
+                    动画交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="emitter.html">
+            
+                <a href="emitter.html">
+            
+                    
+                    发布订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="extend.html">
+            
+                <a href="extend.html">
+            
+                    
+                    插件扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="import.html">
+            
+                <a href="import.html">
+            
+                    
+                    第三方插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    数据驱动
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../store/about.html">
+            
+                <a href="../store/about.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../store/distance.html">
+            
+                <a href="../store/distance.html">
+            
+                    
+                    store 实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../store/computed.html">
+            
+                <a href="../store/computed.html">
+            
+                    
+                    计算属性与侦听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../store/template-synatax.html">
+            
+                <a href="../store/template-synatax.html">
+            
+                    
+                    模板语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../store/attribute.html">
+            
+                <a href="../store/attribute.html">
+            
+                    
+                    属性与值绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../store/class.html">
+            
+                <a href="../store/class.html">
+            
+                    
+                    class 与 style 绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../store/template.html">
+            
+                <a href="../store/template.html">
+            
+                    
+                    模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../store/if.html">
+            
+                <a href="../store/if.html">
+            
+                    
+                    if与switch判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../store/form.html">
+            
+                <a href="../store/form.html">
+            
+                    
+                    表单绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../store/event.html">
+            
+                <a href="../store/event.html">
+            
+                    
+                    事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../store/mixins.html">
+            
+                <a href="../store/mixins.html">
+            
+                    
+                    混入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../store/component.html">
+            
+                <a href="../store/component.html">
+            
+                    
+                    组件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../store/debug.html">
+            
+                <a href="../store/debug.html">
+            
+                    
+                    数据调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../store/case.html">
+            
+                <a href="../store/case.html">
+            
+                    
+                    综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    提高效率
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <a target="_blank" href="https://www.easybui.com/products/269.html">
+            
+                    
+                    BUI-Fast 编辑器插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <a target="_blank" href="https://www.easybui.com/products/267.html">
+            
+                    
+                    buijs cli 工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <a target="_blank" href="https://www.easybui.com/templates.html">
+            
+                    
+                    模板库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    链接
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../help.html">
+            
+                <a href="../help.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../article.html">
+            
+                <a href="../article.html">
+            
+                    
+                    BUI 专栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../linkapi.html">
+            
+                <a href="../linkapi.html">
+            
+                    
+                    Link 专栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" >
+            
+                <a target="_blank" href="http://www.easybui.com/guide-1.6.x/">
+            
+                    
+                    1.6.x 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" >
+            
+                <a target="_blank" href="http://www.easybui.com/guide-1.5.x/">
+            
+                    
+                    1.5.x 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" >
+            
+                <a target="_blank" href="http://www.easybui.com/guide-1.4.8/">
+            
+                    
+                    1.4.x 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >动画交互</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x52A8;&#x753B;&#x4EA4;&#x4E92;"><b></b>&#x52A8;&#x753B;&#x4EA4;&#x4E92;</a></li><ul><li><span class="title-icon "></span><a href="#&#x52A8;&#x753B;&#x5207;&#x6362;&#x5668;"><b></b>&#x52A8;&#x753B;&#x5207;&#x6362;&#x5668;</a></li><ul><li><span class="title-icon "></span><a href="#buitoggleoption"><b></b>bui.toggle(option)</a></li></ul><li><span class="title-icon "></span><a href="#&#x52A8;&#x753B;&#x63A7;&#x5236;&#x5668;"><b></b>&#x52A8;&#x753B;&#x63A7;&#x5236;&#x5668;</a></li><ul><li><span class="title-icon "></span><a href="#buianimateoption"><b></b>bui.animate(option)</a></li></ul></ul></ul></div><a href="#&#x52A8;&#x753B;&#x4EA4;&#x4E92;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x52A8;&#x753B;&#x4EA4;&#x4E92;"><a name="&#x52A8;&#x753B;&#x4EA4;&#x4E92;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x753B;&#x4EA4;&#x4E92;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x753B;&#x4EA4;&#x4E92;</h1>
+<blockquote>
+<p>&#x5408;&#x7406;&#x7684;&#x4F7F;&#x7528;&#x52A8;&#x753B;&#x8BA9;&#x4EBA;&#x8EAB;&#x5FC3;&#x6109;&#x60A6;, &#x7ED9;&#x4E88;&#x7528;&#x6237;&#x9002;&#x5F53;&#x7684;&#x53CD;&#x9988;,&#x53EF;&#x4EE5;&#x589E;&#x5F3A;&#x7528;&#x6237;&#x64CD;&#x4F5C;&#x4F53;&#x9A8C;.</p>
+</blockquote>
+<h2 id="&#x52A8;&#x753B;&#x5207;&#x6362;&#x5668;"><a name="&#x52A8;&#x753B;&#x5207;&#x6362;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x753B;&#x5207;&#x6362;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x753B;&#x5207;&#x6362;&#x5668;</h2>
+<h3 id="buitoggleoption"><a name="buitoggleoption" class="anchor-navigation-ex-anchor" href="#buitoggleoption"><i class="fa fa-link" aria-hidden="true"></i></a>bui.toggle(option)</h3>
+<p><a href="http://www.easybui.com/demo/#pages/ui_method/bui.toggle" target="_blank">&#x70B9;&#x51FB;&#x9884;&#x89C8;</a></p>
+<blockquote>
+<p>&#x57FA;&#x4E8E;<code>animate.css</code>&#x7684;&#x90E8;&#x5206;&#x52A8;&#x753B;&#x4EA4;&#x4E92;&#x6548;&#x679C;,&#x7EDF;&#x4E00;&#x4E86;&#x52A8;&#x753B;&#x8FDB;&#x573A;,&#x51FA;&#x573A;&#x7684;&#x4EA4;&#x4E92;&#x65B9;&#x5F0F;. &#x50CF; <code>bui.dialog</code>,<code>bui.router</code> &#x7684;&#x4EA4;&#x4E92;&#x90FD;&#x662F;&#x57FA;&#x4E8E; <code>bui.toggle</code> &#x5B9E;&#x73B0;.</p>
+</blockquote>
+<p><em>&#x53C2;&#x6570;: option &#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61; </em></p>
+<h4 id="optionid"><a name="optionid" class="anchor-navigation-ex-anchor" href="#optionid"><i class="fa fa-link" aria-hidden="true"></i></a>option.id</h4>
+<ul>
+<li>Type: <code>string|object</code></li>
+<li>Detail: <code>&#x8981;&#x6267;&#x884C;&#x52A8;&#x753B;&#x7684;&#x5143;&#x7D20;ID,&#x6216;&#x5BF9;&#x8C61;</code></li>
+</ul>
+<h4 id="optioneffect"><a name="optioneffect" class="anchor-navigation-ex-anchor" href="#optioneffect"><i class="fa fa-link" aria-hidden="true"></i></a>option.effect</h4>
+<ul>
+<li>Type: <code>object</code></li>
+<li>Detail: <code>&#x52A8;&#x753B;&#x6548;&#x679C;, showIn(&#x65E0;&#x52A8;&#x753B;) | fadeIn | fadeInLeft | fadeInRight | fadeInDown | fadeInUp | zoomIn | bounceIn | rotateIn | flipInX | flipInY</code></li>
+</ul>
+<p><em>&#x4F8B;&#x5B50;:</em></p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>toggle<span class="token punctuation">&quot;</span></span> <span class="token special-attr"><span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span><span class="token value css language-css"><span class="token property">width</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><span class="token property">height</span><span class="token punctuation">:</span> 100px<span class="token punctuation">;</span><span class="token property">background</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span></span><span class="token punctuation">&quot;</span></span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> toggle <span class="token operator">=</span> bui<span class="token punctuation">.</span><span class="token function">toggle</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;toggle&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x663E;&#x793A;</span>
+toggle<span class="token punctuation">.</span><span class="token function">show</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x9690;&#x85CF;</span>
+toggle<span class="token punctuation">.</span><span class="token function">hide</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="&#x52A8;&#x753B;&#x63A7;&#x5236;&#x5668;"><a name="&#x52A8;&#x753B;&#x63A7;&#x5236;&#x5668;" class="anchor-navigation-ex-anchor" href="#&#x52A8;&#x753B;&#x63A7;&#x5236;&#x5668;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A8;&#x753B;&#x63A7;&#x5236;&#x5668;</h2>
+<h3 id="buianimateoption"><a name="buianimateoption" class="anchor-navigation-ex-anchor" href="#buianimateoption"><i class="fa fa-link" aria-hidden="true"></i></a>bui.animate(option)</h3>
+<p><a href="http://www.easybui.com/demo/#pages/ui_method/bui.animate" target="_blank">&#x70B9;&#x51FB;&#x9884;&#x89C8;</a></p>
+<blockquote>
+<p>&#x76F4;&#x63A5;&#x5BF9;&#x5143;&#x7D20;&#x6267;&#x884C;<code>transform</code>&#x52A8;&#x753B;</p>
+</blockquote>
+<p><em>&#x53C2;&#x6570;: option &#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61; </em></p>
+<h4 id="optionid_1"><a name="optionid_1" class="anchor-navigation-ex-anchor" href="#optionid_1"><i class="fa fa-link" aria-hidden="true"></i></a>option.id</h4>
+<ul>
+<li>Type: <code>string|object</code></li>
+<li>Detail: <code>&#x8981;&#x6267;&#x884C;&#x52A8;&#x753B;&#x7684;&#x5143;&#x7D20;ID,&#x6216;&#x5BF9;&#x8C61;</code></li>
+</ul>
+<p><em>&#x4F8B;&#x5B50;:</em></p>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>btn1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x89E6;&#x53D1;&#x52A8;&#x753B;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bar1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>&#x6211;&#x662F;&#x52A8;&#x753B;&#x5143;&#x7D20;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<pre class="language-"><code class="lang-js"><span class="token keyword">var</span> uiAnimate <span class="token operator">=</span> bui<span class="token punctuation">.</span><span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">{</span> <span class="token literal-property property">id</span><span class="token operator">:</span> <span class="token string">&quot;#bar1&quot;</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;#btn1&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;click&quot;</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  uiAnimate
+    <span class="token punctuation">.</span><span class="token function">stop</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">left</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">skewX</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">left</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">start</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>&#x5148;<code>stop()</code> &#x662F;&#x4E3A;&#x4E86;&#x6E05;&#x7A7A;&#x4E4B;&#x524D;&#x7684;&#x52A8;&#x753B;,&#x5728;&#x521D;&#x59CB;&#x5316;&#x4F4D;&#x7F6E;&#x4F4D;&#x79FB;,&#x5982;&#x679C;&#x4E0D;&#x8981; stop,&#x5219;&#x662F;&#x7EE7;&#x7EED;&#x4F4D;&#x79FB;,&#x53EF;&#x4EE5;&#x4E00;&#x76F4;&#x6267;&#x884C;</p>
+</blockquote>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9;2017-2022 easybui.com all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2022-04-25 14:27:46
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="method.html" class="navigation navigation-prev " aria-label="Previous page: 常用方法">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="emitter.html" class="navigation navigation-next " aria-label="Next page: 发布订阅">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"动画交互","level":"1.4.7","depth":2,"next":{"title":"发布订阅","level":"1.4.8","depth":2,"path":"chapter2/emitter.md","ref":"chapter2/emitter.md","articles":[]},"previous":{"title":"常用方法","level":"1.4.6","depth":2,"path":"chapter2/method.md","ref":"chapter2/method.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","chapter-fold"],"styles":{"website":"./static/css/gitbook.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy2017-2022 easybui.com","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.min.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"6781b936303667306495d5d92ad58add"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"imouou","repo":"BUI-Guide","type":"star","count":true,"size":"small"},{"user":"imouou","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"王小o - imouou","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"BUI官方文档","language":"zh-hans","links":{},"gitbook":"*","description":"BUI 是一个专注移动快速开发的跨平台 UI 框架，基于文件路径式的单页路由和组件加载，开箱零配置，简单上手，完美嵌入各平台或打包 APP，适合独立开发各种 Webapp，App，轻应用，小程序，公众号，聆客，钉钉……"},"file":{"path":"chapter2/animate.md","mtime":"2022-04-25T06:27:46.386Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-07T02:41:07.134Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,30 @@
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">子组件编译</div>
+            <div class="bui-bar-right">
+            </div>
+        </div>
+    </header>
+    <main class="container-xy">
+
+        component 的 b-props 支持单个参数或多个参数。
+
+        searchbar 组件接收 placeholder，value 等参数，
+
+        <div class="subtitle">
+            绑定对象，多个参数，修改对象触发 bs.search = { placeholder:"BUI", value:"" }
+        </div>
+        <component name="pages/components/searchbar/index" b-props="page.search"></component>
+
+        <div class="subtitle">
+            绑定字符串，单个参数，修改字符触发 bs.placeholder = "BUI"
+        </div>
+        <component name="pages/components/searchbar/index" b-props="page.placeholder"></component>
+
+
+    </main>
+</div>

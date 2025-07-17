@@ -1,0 +1,38 @@
+<style>
+    #container {
+        width: 100%;
+        height: 100%;
+
+    }
+</style>
+<div class="bui-page">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn btn-back"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">BUI使用高德地图</div>
+        <div class="bui-bar-right"></div>
+    </header>
+    <main style="position: relative;">
+        <div id="uiTab" class="bui-tab bui-box-vertical">
+            <div class="bui-tab-head">
+                <ul class="bui-nav">
+                    <!-- 分屏菜单 active 是激活的TAB样式 -->
+                    <li class="bui-btn active">Tab1</li>
+                    <li class="bui-btn">Tab2</li>
+                </ul>
+            </div>
+            <div class="bui-tab-main">
+                <ul>
+                    <li>
+                        地图在第二屏
+                    </li>
+                    <li style="display:none;">
+                        <div b-template="page.tplMap(page.map)"></div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</div>

@@ -1,0 +1,91 @@
+<style type="text/css">
+    .box {
+
+        width: 300px;
+
+        margin: 0 auto;
+
+        position: relative;
+
+        border: 1px solid #ff6700;
+        overflow: hidden;
+
+    }
+
+    .wordsLoop {
+
+        padding-left: 20px;
+        font-size: 12px;
+        color: #000;
+        white-space: nowrap;
+        animation: 15s wordsLoop linear infinite normal;
+
+    }
+
+    @keyframes wordsLoop {
+
+        0% {
+
+            transform: translateX(100%);
+
+            -webkit-transform: translateX(100%);
+
+        }
+
+        100% {
+
+            transform: translateX(-100%);
+
+            -webkit-transform: translateX(-100%);
+
+        }
+
+    }
+
+    @-webkit-keyframes wordsLoop {
+
+        0% {
+
+            transform: translateX(100%);
+
+            -webkit-transform: translateX(100%);
+
+        }
+
+        100% {
+
+            transform: translateX(-100%);
+
+            -webkit-transform: translateX(-100%);
+
+        }
+
+    }
+</style>
+<div class="bui-page">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">滚动公告</div>
+        <div class="bui-bar-right">
+        </div>
+    </header>
+    <main>
+
+        <!-- 	
+	<div class="box">
+		<p class="wordsLoop">
+			这里可以跑马灯滚动展示：开始给我滚起来
+		</p>
+	</div> -->
+        <!-- marquee在手机效果不太好 -->
+        <!-- <marquee align="left" behavior="scroll" direction="up" height="300" width="200" hspace="50" vspace="20" loop="-1" scrollamount="10" scrolldelay="150" onMouseOut="this.start()" onMouseOver="this.stop()">
+			这里可以放文字、图片、表格等都可以跑马灯滚动展示：开始给我滚起来～～
+		</marquee>
+		<marquee align="left" behavior="scroll" direction="left" height="100" width="300" hspace="50" vspace="20" loop="-1" scrollamount="10" scrolldelay="150" onMouseOut="this.start()" onMouseOver="this.stop()">
+			这里可以放文字、图片、表格等都可以跑马灯滚动展示：开始给我滚起来～～
+		</marquee> -->
+        <div id="slideNote" class="bui-slide bui-slide-notice"></div>
+    </main>
+</div>

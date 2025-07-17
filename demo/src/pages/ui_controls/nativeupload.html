@@ -1,0 +1,29 @@
+<style>
+    output {
+        word-break: break-all;
+    }
+
+    .bui-box-space {
+        margin-bottom: .2rem;
+    }
+</style>
+<div class="bui-page">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">文件原生上传</div>
+        <div class="bui-bar-right">
+        </div>
+    </header>
+    <main>
+        web上传
+        <input type="file" b-change="page.webchange">
+        native上传
+        <input type="file" b-change="page.nativechange">
+
+
+        web上传第三方
+        <input type="file" b-change="page.webchangeother">
+    </main>
+</div>

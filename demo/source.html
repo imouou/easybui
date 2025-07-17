@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <title>源码预览编辑器</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/bui.css" />
+    <link rel="stylesheet" href="build/js/plugins/codemirror/lib/codemirror.css" />
+    <link rel="stylesheet" href="build/js/plugins/codemirror/addon/fold/foldgutter.css" />
+    <link rel="stylesheet" href="build/js/plugins/codemirror/theme/jsbin.css" />
+    <link rel="stylesheet" href="build/css/oEditor.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="bui-nav">
+                <!-- 分屏菜单 active 是激活的TAB样式 -->
+                <li class="bui-btn" data-target="full">完整示例</li>
+                <li class="bui-btn" data-target="html">html</li>
+                <li class="bui-btn" data-target="js">js</li>
+                <li class="bui-btn" data-target="css">css</li>
+                <li class="bui-btn" data-target="result">result</li>
+            </ul>
+            <div class="controls">
+                <a href="javascript:" id="question">使用问题?</a>
+                <!-- <label><span id="translateText">多页/单页</span><input type ="checkbox" id="translate" class="bui-switch" value=""></label> -->
+                <button class="copy" title="复制完整HTML">一键复制</button>
+                <button id="jszipspa" class="jszip" title="打包单页模块">下载单页</button>
+                <button id="jszip" class="jszip" title="打包下载多页">下载多页</button>
+                <!-- <div class="dropdown">
+                    <button id="scancode">扫码预览</button>
+                    <div class="dropdown-main">
+                        <div id="qrcode"></div>
+                        <p>手机扫码预览</p>
+                    </div>
+                </div> -->
+                <button id="run" class="primary">运行</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="bui-box">
+                <!-- full -->
+                <div class="span1" data-code="full">
+                    <div class="panel">
+                        <div class="panel-head">
+                            html
+                        </div>
+                        <div class="panel-main">
+                            <textarea class="editor" data-type="full"></textarea>
+                            <button class="copy" data-target="full">复制</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- html -->
+                <div class="span1" data-code="html">
+                    <div class="panel">
+                        <div class="panel-head">
+                            html
+                        </div>
+                        <div class="panel-main">
+                            <textarea class="editor" data-type="html"></textarea>
+                            <button class="copy" data-target="html">复制</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- js -->
+                <div class="span1" data-code="js">
+                    <div class="panel">
+                        <div class="panel-head">
+                            javascript
+                        </div>
+                        <div class="panel-main">
+                            <textarea class="editor" data-type="javascript"></textarea>
+                            <button class="copy" data-target="javascript">复制</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- css -->
+                <div class="span1" data-code="css">
+
+                    <div class="panel">
+                        <div class="panel-head">
+                            css
+                        </div>
+                        <div class="panel-main">
+                            <textarea class="editor" data-type="css"></textarea>
+                            <button class="copy" data-target="css">复制</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- 预览 -->
+                <iframe id="preview" name="preview" width="320" height="568" frameborder="0"
+                    data-code="result"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+</textarea>
+<script src="build/js/jquery-1.11.1.min.js"></script>
+<script src="js/bui.js"></script>
+<script src="build/js/plugins/codemirror/lib/codemirror.js"></script>
+<!-- 代码高亮 -->
+<script src="build/js/plugins/codemirror/mode/css/css.js"></script>
+<script src="build/js/plugins/codemirror/mode/javascript/javascript.js"></script>
+<script src="build/js/plugins/codemirror/mode/xml/xml.js"></script>
+<script src="build/js/plugins/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+<!-- 代码折叠 -->
+<script src="build/js/plugins/codemirror/addon/selection/selection-pointer.js"></script>
+<script src="build/js/plugins/codemirror/addon/fold/foldcode.js"></script>
+<script src="build/js/plugins/codemirror/addon/fold/foldgutter.js"></script>
+<script src="build/js/plugins/codemirror/addon/fold/brace-fold.js"></script>
+<script src="build/js/plugins/codemirror/addon/fold/comment-fold.js"></script>
+<!-- 编辑器 -->
+<script src="build/js/plugins/qrcode.min.js"></script>
+<script src="build/js/plugins/clipboard.min.js"></script>
+<!-- 压缩打包 -->
+<script src="build/js/plugins/jszip.min.js"></script>
+<!-- 文件保存下载 -->
+<script src="build/js/plugins/FileSaver.js"></script>
+<script src="build/js/oEditor.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var editor = oEditor();
+        editor.init();
+
+        // 多页及模块的转换
+        // $("#translate").on("change", function(e) {
+        //     var isCheck = $(this).is(":checked");
+        //     if (isCheck) {
+        //         translateText.innerText = "单页模式";
+        //         editor.translateModule();
+        //     } else {
+        //         translateText.innerText = "多页模式";
+        //         editor.translatePage();
+        //     }
+        // })
+        $("#question").on("click", function (e) {
+            bui.confirm({
+                title: "使用问题?",
+                content: '<div style="text-align:left;"><div><strong>一键复制</strong>: 把完整的HTML包含HTML,JS,CSS一起复制.</div> <div><strong>下载单页</strong>: 用于单页开发, 对应单页的同名路径, 一个HTML,一个JS. 点击[下载单页],把压缩包解压到工程的pages/目录下, 通过服务部署,在地址栏输入 http://xxx.com/#pages/压缩包名/index 预览.</div> <div><strong>下载多页</strong>: 用于多页开发, 指传统WEB开发, 每个页面都要引入对应的头部信息, 你只需查看完整示例,或者点击[下载多页]就能使用;</div> <div><strong>运行</strong>: 部分效果刚开始加载不正常,需要点多一次运行才会正确,这种情况只存在于预览,不存在真实开发环境.</div></div>',
+                buttons: ["确定"],
+                width: 440,
+                height: 320,
+                zoom: false
+            })
+        })
+    })
+</script>
+</body>
+
+</html>

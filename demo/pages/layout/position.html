@@ -1,0 +1,41 @@
+<style>
+    /* 示例样式效果，开发中不需要 */
+
+    .bui-box-center div,
+    div[class^="bui-position"] {
+        height: 1.4rem;
+        width: 1.4rem;
+        background: #ddd;
+    }
+</style>
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">定位布局</div>
+            <div class="bui-bar-right">
+                <!-- 右边按钮 -->
+            </div>
+        </div>
+    </header>
+    <main style="position:relative;">
+        <!-- 这个居中非定位的居中，会干扰正常布局，内容只能在子集到div里面 -->
+        <div class="bui-box-center fullheight">
+            <div>绝对居中</div>
+        </div>
+        <div class="bui-position-top">
+            顶部左边
+        </div>
+        <div class="bui-position-top-right">
+            顶部右边
+        </div>
+        <div class="bui-position-bottom">
+            底部左边
+        </div>
+        <div class="bui-position-bottom-right">
+            底部右边
+        </div>
+    </main>
+</div>

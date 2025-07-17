@@ -1,0 +1,132 @@
+<style>
+    .example-box-fluid>div,
+    .example-fluid>li,
+    .example-box2>div,
+    .example-box>div {
+        background: #e1e1e1;
+        min-height: .8rem;
+        border-radius: 10px;
+        padding: .1rem;
+    }
+
+    .example-box div:nth-child(odd),
+    .example-box2 div:nth-child(odd),
+    .example-fluid li:nth-child(odd) {
+        background: #efefef;
+    }
+
+    .example-box3 div .bui-btn,
+    .example-box3 div .bui-btn-inline,
+    .example-fluid div .bui-btn {
+        background: #efefef;
+        border: 0;
+        border-radius: 10px;
+    }
+
+    .example-box3 div:nth-child(odd) .bui-btn,
+    .example-box3 div:nth-child(odd) .bui-btn-inline,
+    .example-fluid div:nth-child(odd) .bui-btn,
+    .example-fluid div:nth-child(odd) .bui-btn-inline {
+        background: #e1e1e1;
+    }
+</style>
+<div class="bui-page bui-box-vertical">
+    <header>
+        <div class="bui-bar">
+            <div class="bui-bar-left">
+                <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+            </div>
+            <div class="bui-bar-main">九宫格布局</div>
+            <div class="bui-bar-right">
+                <!-- 右边按钮 -->
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="section-title">1. 流式等列布局</div>
+
+        <ul class="bui-fluid-3 example-fluid">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+        </ul>
+        <div class="section-title">2. 流式等列留白布局</div>
+
+        <ul class="bui-fluid-space-3">
+            <li>
+                <div style="background:#e1e1e1;">1</div>
+            </li>
+            <li>
+                <div style="background:#e1e1e1;">2</div>
+            </li>
+            <li>
+                <div style="background:#e1e1e1;">3</div>
+            </li>
+            <li>
+                <div style="background:#e1e1e1;">4</div>
+            </li>
+            <li>
+                <div style="background:#e1e1e1;">5</div>
+            </li>
+            <li>
+                <div style="background:#e1e1e1;">6</div>
+            </li>
+            <li>
+                <div style="background:#e1e1e1;">7</div>
+            </li>
+            <li>
+                <div style="background:#e1e1e1;">8</div>
+            </li>
+            <li>
+                <div style="background:#e1e1e1;">9</div>
+            </li>
+        </ul>
+        <div class="section-title">3. 九宫格示例-可自定义列数</div>
+
+        <!-- 3列布局 -->
+        <ul class="bui-fluid-3 bui-nav-icon">
+            <li class="bui-btn">
+                <div class="bui-icon primary round"><i class="icon-success"><span class="bui-badges">15</span></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+            <li class="bui-btn">
+                <div class="bui-icon success round"><i class="icon-error"></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+            <li class="bui-btn">
+                <div class="bui-icon warning round"><i class="icon-info"></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+            <li class="bui-btn">
+                <div class="bui-icon danger round"><i class="icon-shoppingcart"></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+            <li class="bui-btn">
+                <div class="bui-icon primary round"><i class="icon-success"><span class="bui-badges">15</span></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+            <li class="bui-btn">
+                <div class="bui-icon success round"><i class="icon-error"></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+            <li class="bui-btn">
+                <div class="bui-icon warning round"><i class="icon-info"></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+            <li class="bui-btn">
+                <div class="bui-icon danger round"><i class="icon-shoppingcart"></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+            <li class="bui-btn">
+                <div class="bui-icon primary round"><i class="icon-more"></i></div>
+                <div class="span1">小圆图标</div>
+            </li>
+        </ul>
+    </main>
+</div>

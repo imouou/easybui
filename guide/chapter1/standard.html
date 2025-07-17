@@ -1,0 +1,1094 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>开发规范 · BUI官方文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="王小o - imouou">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-tomorrow.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../static/css/gitbook.css">
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="style.html" />
+    
+    
+    <link rel="prev" href="dev.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"imouou","repo":"BUI-Guide","type":"star","count":true,"size":"small"},{"user":"imouou","width":"160","type":"follow","count":true,"size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" >
+            
+                <span>
+            
+                    
+                    BUI 官方文档 1.9.x
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    概述
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="quickstart.html">
+            
+                <a href="quickstart.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    开始
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="dev.html">
+            
+                <a href="dev.html">
+            
+                    
+                    开发方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="standard.html">
+            
+                <a href="standard.html">
+            
+                    
+                    开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="style.html">
+            
+                <a href="style.html">
+            
+                    
+                    样式规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="layout.html">
+            
+                <a href="layout.html">
+            
+                    
+                    布局
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../chapter2/controls.html">
+            
+                <a href="../chapter2/controls.html">
+            
+                    
+                    控件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../chapter2/template.html">
+            
+                <a href="../chapter2/template.html">
+            
+                    
+                    模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../chapter2/module.html">
+            
+                <a href="../chapter2/module.html">
+            
+                    
+                    模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../chapter2/component.html">
+            
+                <a href="../chapter2/component.html">
+            
+                    
+                    组件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../chapter2/router.html">
+            
+                <a href="../chapter2/router.html">
+            
+                    
+                    路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../chapter2/history.html">
+            
+                <a href="../chapter2/history.html">
+            
+                    
+                    历史记录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    进阶
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter2/communication.html">
+            
+                <a href="../chapter2/communication.html">
+            
+                    
+                    组件通讯
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter2/page.html">
+            
+                <a href="../chapter2/page.html">
+            
+                    
+                    组件弹窗加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter2/life.html">
+            
+                <a href="../chapter2/life.html">
+            
+                    
+                    生命周期
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../chapter2/loader.html">
+            
+                <a href="../chapter2/loader.html">
+            
+                    
+                    模块定义与加载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../chapter2/global.html">
+            
+                <a href="../chapter2/global.html">
+            
+                    
+                    公共方法与配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../chapter2/method.html">
+            
+                <a href="../chapter2/method.html">
+            
+                    
+                    常用方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../chapter2/animate.html">
+            
+                <a href="../chapter2/animate.html">
+            
+                    
+                    动画交互
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../chapter2/emitter.html">
+            
+                <a href="../chapter2/emitter.html">
+            
+                    
+                    发布订阅
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../chapter2/extend.html">
+            
+                <a href="../chapter2/extend.html">
+            
+                    
+                    插件扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../chapter2/import.html">
+            
+                <a href="../chapter2/import.html">
+            
+                    
+                    第三方插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    数据驱动
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../store/about.html">
+            
+                <a href="../store/about.html">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../store/distance.html">
+            
+                <a href="../store/distance.html">
+            
+                    
+                    store 实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../store/computed.html">
+            
+                <a href="../store/computed.html">
+            
+                    
+                    计算属性与侦听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../store/template-synatax.html">
+            
+                <a href="../store/template-synatax.html">
+            
+                    
+                    模板语法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../store/attribute.html">
+            
+                <a href="../store/attribute.html">
+            
+                    
+                    属性与值绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../store/class.html">
+            
+                <a href="../store/class.html">
+            
+                    
+                    class 与 style 绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../store/template.html">
+            
+                <a href="../store/template.html">
+            
+                    
+                    模板渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../store/if.html">
+            
+                <a href="../store/if.html">
+            
+                    
+                    if与switch判断
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../store/form.html">
+            
+                <a href="../store/form.html">
+            
+                    
+                    表单绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../store/event.html">
+            
+                <a href="../store/event.html">
+            
+                    
+                    事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.11" data-path="../store/mixins.html">
+            
+                <a href="../store/mixins.html">
+            
+                    
+                    混入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.12" data-path="../store/component.html">
+            
+                <a href="../store/component.html">
+            
+                    
+                    组件化
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.13" data-path="../store/debug.html">
+            
+                <a href="../store/debug.html">
+            
+                    
+                    数据调试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.14" data-path="../store/case.html">
+            
+                <a href="../store/case.html">
+            
+                    
+                    综合案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    提高效率
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" >
+            
+                <a target="_blank" href="https://www.easybui.com/products/269.html">
+            
+                    
+                    BUI-Fast 编辑器插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <a target="_blank" href="https://www.easybui.com/products/267.html">
+            
+                    
+                    buijs cli 工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" >
+            
+                <a target="_blank" href="https://www.easybui.com/templates.html">
+            
+                    
+                    模板库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    链接
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../help.html">
+            
+                <a href="../help.html">
+            
+                    
+                    常见问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../article.html">
+            
+                <a href="../article.html">
+            
+                    
+                    BUI 专栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../linkapi.html">
+            
+                <a href="../linkapi.html">
+            
+                    
+                    Link 专栏
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" >
+            
+                <a target="_blank" href="http://www.easybui.com/guide-1.6.x/">
+            
+                    
+                    1.6.x 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" >
+            
+                <a target="_blank" href="http://www.easybui.com/guide-1.5.x/">
+            
+                    
+                    1.5.x 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" >
+            
+                <a target="_blank" href="http://www.easybui.com/guide-1.4.8/">
+            
+                    
+                    1.4.x 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >开发规范</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5F00;&#x53D1;&#x89C4;&#x8303;"><b></b>&#x5F00;&#x53D1;&#x89C4;&#x8303;</a></li><ul><ul><li><span class="title-icon "></span><a href="#1-&#x5207;&#x56FE;&#x89C4;&#x8303;"><b></b>1. &#x5207;&#x56FE;&#x89C4;&#x8303;</a></li><li><span class="title-icon "></span><a href="#2-&#x76EE;&#x5F55;&#x89C4;&#x8303;"><b></b>2. &#x76EE;&#x5F55;&#x89C4;&#x8303;</a></li><li><span class="title-icon "></span><a href="#3-&#x8DEF;&#x5F84;&#x4F7F;&#x7528;&#x89C4;&#x8303;"><b></b>3. &#x8DEF;&#x5F84;&#x4F7F;&#x7528;&#x89C4;&#x8303;</a></li><li><span class="title-icon "></span><a href="#4-&#x9875;&#x9762;&#x7ED3;&#x6784;&#x89C4;&#x8303;"><b></b>4. &#x9875;&#x9762;&#x7ED3;&#x6784;&#x89C4;&#x8303;</a></li><li><span class="title-icon "></span><a href="#5-&#x6A21;&#x5757;&#x5316;&#x89C4;&#x8303;"><b></b>5. &#x6A21;&#x5757;&#x5316;&#x89C4;&#x8303;</a></li><li><span class="title-icon "></span><a href="#6-&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;"><b></b>6. &#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</a></li></ul></ul></ul></div><a href="#&#x5F00;&#x53D1;&#x89C4;&#x8303;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5F00;&#x53D1;&#x89C4;&#x8303;"><a name="&#x5F00;&#x53D1;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x53D1;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F00;&#x53D1;&#x89C4;&#x8303;</h1>
+<p>&#x9075;&#x5FAA;&#x4EE5;&#x4E0B;&#x89C4;&#x8303;&#xFF0C;&#x53EF;&#x4EE5;&#x9AD8;&#x4FDD;&#x771F;&#x8FD8;&#x539F;&#x8BBE;&#x8BA1;&#x7A3F;&#x3002;</p>
+<h3 id="1-&#x5207;&#x56FE;&#x89C4;&#x8303;"><a name="1-&#x5207;&#x56FE;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#1-&#x5207;&#x56FE;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>1. &#x5207;&#x56FE;&#x89C4;&#x8303;</h3>
+<blockquote>
+<p>BUI &#x57FA;&#x4E8E; REM &#x9002;&#x914D;&#x624B;&#x673A;,&#x4FDD;&#x6301;&#x8DDF;&#x539F;&#x751F; DPI &#x4E00;&#x81F4;&#x7684;&#x7F29;&#x653E;&#x6548;&#x679C;, &#x9700;&#x8981;&#x628A;&#x8BBE;&#x8BA1;&#x7A3F;&#x8F6C;&#x6362;&#x4E3A; 750 &#x7684;&#x8BBE;&#x8BA1;&#x7A3F;,&#x91CF;&#x53D6;&#x5230;&#x7684;&#x503C;,&#x76F4;&#x63A5;&#x9664;&#x4EE5; 100,&#x4FBF;&#x662F; rem &#x503C;.</p>
+</blockquote>
+<h4 id="&#x91CF;&#x53D6;&#x8BBE;&#x8BA1;&#x7A3F;&#x5185;&#x5BB9;&#x7684;&#x5927;&#x5C0F;100-&#x8F6C;&#x6210;-rem-&#x5355;&#x4F4D;"><a name="&#x91CF;&#x53D6;&#x8BBE;&#x8BA1;&#x7A3F;&#x5185;&#x5BB9;&#x7684;&#x5927;&#x5C0F;100-&#x8F6C;&#x6210;-rem-&#x5355;&#x4F4D;" class="anchor-navigation-ex-anchor" href="#&#x91CF;&#x53D6;&#x8BBE;&#x8BA1;&#x7A3F;&#x5185;&#x5BB9;&#x7684;&#x5927;&#x5C0F;100-&#x8F6C;&#x6210;-rem-&#x5355;&#x4F4D;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x91CF;&#x53D6;&#x8BBE;&#x8BA1;&#x7A3F;&#x5185;&#x5BB9;&#x7684;&#x5927;&#x5C0F;/100, &#x8F6C;&#x6210; rem &#x5355;&#x4F4D;</h4>
+<p><img src="../static/images/getSlideHeight.png" alt="&#x8F6C;&#x6362;&#x5C3A;&#x5BF8;&#x4E3A;rem&#x5355;&#x4F4D;"></p>
+<pre class="language-"><code class="lang-css"><span class="token selector">.slide</span> <span class="token punctuation">{</span>
+  <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+  <span class="token property">height</span><span class="token punctuation">:</span> 2.7rem<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="2-&#x76EE;&#x5F55;&#x89C4;&#x8303;"><a name="2-&#x76EE;&#x5F55;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#2-&#x76EE;&#x5F55;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>2. &#x76EE;&#x5F55;&#x89C4;&#x8303;</h3>
+<p><img src="../static/images/router/catalog.png" alt="&#x76EE;&#x5F55;&#x622A;&#x56FE;"></p>
+<blockquote>
+<p>&#x6CE8;&#x610F;: &#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x4E0B;&#x4E0D;&#x80FD;&#x6709;<code>&#x4E2D;&#x6587;&#x6587;&#x4EF6;&#x540D;</code>,&#x4F1A;&#x5F71;&#x54CD;&#x6253;&#x5305;. &#x6574;&#x4E2A;&#x5DE5;&#x7A0B;&#x76EE;&#x5F55;&#x4E5F;&#x4E0D;&#x80FD;&#x6709;<code>&#x4E2D;&#x6587;&#x8DEF;&#x5F84;</code>, &#x4FDD;&#x5B58;&#x4EE3;&#x7801;&#x70ED;&#x66F4;&#x65B0;&#x624D;&#x4F1A;&#x6709;&#x6548;.</p>
+</blockquote>
+<p><strong>&#x76EE;&#x5F55;&#x8BF4;&#x660E;:</strong></p>
+<pre class="language-"><code>&#x279C;  bui tree
+.
+&#x251C;&#x2500;&#x2500; src                                                 ## &#x5E94;&#x7528;&#x76EE;&#x5F55;
+|   &#x251C;&#x2500;&#x2500; index.html                                      ## &#x9996;&#x9875;&#x8DEF;&#x7531;&#x7ED3;&#x6784;
+|   &#x251C;&#x2500;&#x2500; index.js                                        ## &#x8DEF;&#x7531;&#x521D;&#x59CB;&#x5316;
+|   &#x251C;&#x2500;&#x2500; pages                                           ## &#x9875;&#x9762;&#x5B58;&#x653E;&#x5730;&#x5740;
+|   &#x2502;   &#x251C;&#x2500;&#x2500; main
+|   &#x2502;   |   &#x2514;&#x2500;&#x2500; main.html                               ## &#x9ED8;&#x8BA4;&#x6253;&#x5F00;&#x7684;main&#x6A21;&#x677F;&#xFF0C;&#x4EE3;&#x8868;&#x9996;&#x9875;&#x5185;&#x5BB9;&#xFF08;&#x53EF;&#x914D;&#xFF09;
+|   &#x2502;   |   &#x2514;&#x2500;&#x2500; main.js                                 ## &#x9ED8;&#x8BA4;&#x6253;&#x5F00;&#x7684;main&#x6A21;&#x5757;&#xFF0C;&#x4EE3;&#x8868;&#x9996;&#x9875;&#x521D;&#x59CB;&#x5316;&#xFF08;&#x53EF;&#x914D;&#xFF09;
+|   &#x2502;   &#x2514;&#x2500;&#x2500; components (&#x53EF;&#x9009;)                            ## &#x7EC4;&#x4EF6;&#x76EE;&#x5F55;
+|   &#x2502;       &#x2514;&#x2500;&#x2500; slide                                   ## slide &#x7EC4;&#x4EF6;
+|   &#x2502;           &#x2514;&#x2500;&#x2500; index.html                          ## slide &#x6A21;&#x677F;
+|   &#x2502;           &#x2514;&#x2500;&#x2500; index.js                            ## slide &#x6A21;&#x5757;
+|   &#x251C;&#x2500;&#x2500; js                                              ## &#x6846;&#x67B6;&#x53CA;&#x63D2;&#x4EF6;&#x76EE;&#x5F55;
+|   |   &#x251C;&#x2500;&#x2500; zepto.js                                    ## zepto&#x5E93;
+|   |   &#x251C;&#x2500;&#x2500; bui.js                                      ## bui&#x5E93;
+|   &#x2502;   &#x251C;&#x2500;&#x2500; config  (&#x53EF;&#x9009;)                               ## &#x516C;&#x5171;&#x914D;&#x7F6E;&#x7684;&#x6587;&#x4EF6;&#x76EE;&#x5F55;
+|   &#x2502;   |   &#x2514;&#x2500;&#x2500; global.js
+|   &#x2502;   &#x2514;&#x2500;&#x2500; plugins (&#x53EF;&#x9009;)                               ## &#x63D2;&#x4EF6;&#x76EE;&#x5F55;&#xFF0C;&#x63D2;&#x4EF6;&#x5FC5;&#x987B;&#x5B58;&#x653E;&#x5728;&#x8FD9;&#x91CC;&#x9762;&#x624D;&#x4E0D;&#x4F1A;&#x88AB;&#x4E8C;&#x6B21;&#x7F16;&#x8BD1;
+|   &#x2502;   |   &#x2514;&#x2500;&#x2500; map                                     ## &#x5730;&#x56FE;&#x63D2;&#x4EF6;
+|   &#x2502;   |       &#x2514;&#x2500;&#x2500; map.css
+|   &#x2502;   |       &#x2514;&#x2500;&#x2500; map.js
+|   &#x2502;   &#x2514;&#x2500;&#x2500; platform (&#x53EF;&#x9009;)                              ## &#x539F;&#x751F;&#x7684;&#x5E73;&#x53F0;&#x6846;&#x67B6;
+|   &#x2502;       &#x2514;&#x2500;&#x2500; cordova.js
+|   &#x251C;&#x2500;&#x2500; css                                             ## &#x5E94;&#x7528;&#x7684;&#x6837;&#x5F0F;&#x76EE;&#x5F55;
+|   |   &#x251C;&#x2500;&#x2500; bui.css
+|   |   &#x2514;&#x2500;&#x2500; style.css
+|   &#x251C;&#x2500;&#x2500; less&#xFF08;&#x53EF;&#x9009;&#xFF09;                                     ## &#x4F7F;&#x7528;less&#x5199;&#x6837;&#x5F0F;&#xFF0C;&#x4F1A;&#x8986;&#x76D6;&#x6389;style.css
+|   |   &#x251C;&#x2500;&#x2500; _common.less
+|   |   &#x2514;&#x2500;&#x2500; style.less
+|   &#x251C;&#x2500;&#x2500; scss&#xFF08;&#x53EF;&#x9009;&#xFF09;                                     ## &#x4F7F;&#x7528;scss&#x5199;&#x6837;&#x5F0F;&#xFF0C;&#x4F1A;&#x8986;&#x76D6;&#x6389;style.css
+|   |   &#x251C;&#x2500;&#x2500; _common.scss
+|   |   &#x2514;&#x2500;&#x2500; style.scss
+&#x2502;   &#x251C;&#x2500;&#x2500; font                                            ## bui.css&#x7528;&#x5230;&#x7684;&#x5B57;&#x4F53;&#x56FE;&#x6807;
+&#x2502;   &#x2514;&#x2500;&#x2500; images                                          ## &#x5E94;&#x7528;&#x7684;&#x56FE;&#x7247;&#x76EE;&#x5F55;
+&#x2502;
+&#x251C;&#x2500;&#x2500; app.json                                            ## &#x7F16;&#x8BD1;&#x7684;&#x914D;&#x7F6E;
+&#x251C;&#x2500;&#x2500; gulpfile.js
+&#x251C;&#x2500;&#x2500; package.json
+</code></pre><h3 id="3-&#x8DEF;&#x5F84;&#x4F7F;&#x7528;&#x89C4;&#x8303;"><a name="3-&#x8DEF;&#x5F84;&#x4F7F;&#x7528;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#3-&#x8DEF;&#x5F84;&#x4F7F;&#x7528;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>3. &#x8DEF;&#x5F84;&#x4F7F;&#x7528;&#x89C4;&#x8303;</h3>
+<p>&#x5047;&#x8BBE;&#x4F60;&#x7684;&#x9875;&#x9762;&#x5728; <em>pages/main/index.html</em>;</p>
+<ol>
+<li><p>&#x5355;&#x9875;&#x5F00;&#x53D1;, &#x4F7F;&#x7528;&#x76F8;&#x5BF9; src &#x76EE;&#x5F55;&#x7684;&#x8DEF;&#x5F84;, &#x65E0;&#x8BBA;&#x4F60;&#x7684;&#x9875;&#x9762;&#x7684;&#x5C42;&#x7EA7;&#x76EE;&#x5F55;&#x6709;&#x591A;&#x6DF1;, &#x91CC;&#x9762;&#x7684;&#x56FE;&#x7247;&#x8DEF;&#x5F84;,&#x8DF3;&#x8F6C;&#x8DEF;&#x5F84;, &#x5E94;&#x8BE5;&#x4F7F;&#x7528; <em>images/xxx.jpg</em>, <em>pages/xxx/xxx.html</em> &#x7684;&#x5199;&#x6CD5;;</p>
+</li>
+<li><p>&#x4E0D;&#x4F7F;&#x7528;&#x7EDD;&#x5BF9;&#x6839;&#x8DEF;&#x5F84;&#x7684;&#x5199;&#x6CD5; <em>/images/xxx.jpg</em>, <em>/pages/xxx/xxx.html</em>; &#x6253;&#x5305;&#x540E;&#x672C;&#x5730;&#x7684;&#x8DEF;&#x5F84;&#x67E5;&#x627E;&#x4F1A;&#x4ECE; file:///xxxx &#x6765;&#x67E5;&#x627E;&#x4F60;&#x7684;&#x6587;&#x4EF6;, &#x6700;&#x7EC8;&#x5BFC;&#x81F4;&#x8DEF;&#x5F84;&#x9519;&#x8BEF;.</p>
+</li>
+</ol>
+<h3 id="4-&#x9875;&#x9762;&#x7ED3;&#x6784;&#x89C4;&#x8303;"><a name="4-&#x9875;&#x9762;&#x7ED3;&#x6784;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#4-&#x9875;&#x9762;&#x7ED3;&#x6784;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x9875;&#x9762;&#x7ED3;&#x6784;&#x89C4;&#x8303;</h3>
+<blockquote>
+<p>&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x7684;&#x7ED3;&#x6784;&#x5305;&#x542B;, .bui-page &#x5B50;&#x96C6;&#x5206;&#x522B;&#x662F; <code>header</code>, <code>main</code>, <code>footer</code> &#x7B49;&#x6807;&#x7B7E;, <code>main</code> &#x6807;&#x7B7E;&#x5FC5;&#x987B;&#x6709;, &#x56E0;&#x4E3A;&#x9875;&#x9762;&#x521D;&#x59CB;&#x5316;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x81EA;&#x52A8;&#x6491;&#x5F00; main &#x7684;&#x9AD8;&#x5EA6;. &#x5FEB;&#x901F;&#x4E66;&#x5199; <code>ui-page</code> <kbd>Tab</kbd></p>
+</blockquote>
+<pre class="language-"><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-page bui-box-vertical<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>header</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-bar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- &#x9876;&#x90E8;&#x56FA;&#x5B9A;&#x5185;&#x5BB9; --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-bar-left<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token comment">&lt;!-- &#x5DE6;&#x8FB9;&#x6709;&#x56FE;&#x6807;&#x793A;&#x4F8B; --&gt;</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>icon-back<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-bar-main<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>BUI&#x5F00;&#x53D1;&#x5DE5;&#x7A0B;&#x6A21;&#x677F;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-bar-right<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+      <span class="token comment">&lt;!-- &#x53F3;&#x8FB9;&#x6709;&#x56FE;&#x6807;&#x793A;&#x4F8B; --&gt;</span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>bui-btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>icon-search<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>header</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- &#x4E2D;&#x95F4;&#x5185;&#x5BB9; --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>footer</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- &#x5E95;&#x90E8;&#x5185;&#x5BB9; --&gt;</span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>footer</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<h3 id="5-&#x6A21;&#x5757;&#x5316;&#x89C4;&#x8303;"><a name="5-&#x6A21;&#x5757;&#x5316;&#x89C4;&#x8303;" class="anchor-navigation-ex-anchor" href="#5-&#x6A21;&#x5757;&#x5316;&#x89C4;&#x8303;"><i class="fa fa-link" aria-hidden="true"></i></a>5. &#x6A21;&#x5757;&#x5316;&#x89C4;&#x8303;</h3>
+<ol>
+<li>&#x4E00;&#x4E2A; js &#x6587;&#x4EF6;&#x91CC;&#x9762;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A; <em>loader.define</em> &#x7684;&#x533F;&#x540D;&#x6A21;&#x5757;;</li>
+<li>&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x9700;&#x8981;&#x5728; <em>loader.define</em> &#x91CC;&#x9762;,&#x9632;&#x6B62;&#x52A0;&#x8F7D;&#x5176;&#x5B83;&#x6A21;&#x5757;&#x7684;&#x65F6;&#x5019;&#x51B2;&#x7A81;;</li>
+<li>&#x6A21;&#x5757;&#x7684;&#x8DEF;&#x5F84;&#x4EE5;&#x53CA;&#x8D44;&#x6E90;&#x7B49;,&#x90FD;&#x4F7F;&#x7528;&#x76F8;&#x5BF9;&#x8DEF;&#x5F84;;</li>
+<li>&#x6A21;&#x5757;&#x91CC;&#x9762;&#x4E0D;&#x80FD;&#x6709;<em>bui.ready</em>&#x7684;&#x6267;&#x884C;;</li>
+</ol>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x5F02;&#x6B65;&#x6A21;&#x5757;&#x6216;&#x7EC4;&#x4EF6;</span>
+loader<span class="token punctuation">.</span><span class="token function">define</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">requires<span class="token punctuation">,</span> exports<span class="token punctuation">,</span> module<span class="token punctuation">,</span> global</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// requires: &#x52A0;&#x8F7D;&#x4F9D;&#x8D56;&#x6A21;&#x5757;</span>
+  <span class="token comment">// module: &#x5F53;&#x524D;&#x6A21;&#x5757;&#x7684;&#x57FA;&#x672C;&#x4FE1;&#x606F;</span>
+  <span class="token comment">// global: &#x5B9A;&#x4E49;&#x7684;&#x5168;&#x5C40;&#x65B9;&#x6CD5;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="6-&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;"><a name="6-&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;" class="anchor-navigation-ex-anchor" href="#6-&#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;"><i class="fa fa-link" aria-hidden="true"></i></a>6. &#x4E8B;&#x4EF6;&#x7ED1;&#x5B9A;</h3>
+<blockquote>
+<p>&#x5355;&#x9875;&#x5F00;&#x53D1;&#x91CC;&#x9762;&#x5F88;&#x5BB9;&#x6613;&#x9020;&#x6210;&#x4E8B;&#x4EF6;&#x91CD;&#x590D;&#x7ED1;&#x5B9A;, &#x6A21;&#x5757;&#x3001;&#x7EC4;&#x4EF6;&#x91CC;&#x9762;<code>$</code>&#xFF08;&#x5168;&#x5C40;&#x9009;&#x62E9;&#x5668;&#xFF09; &#x9009;&#x62E9;&#x5668;&#x8981;&#x6539;&#x6210; <code>router.$</code>&#xFF08;&#x5355;&#x9875;&#x9009;&#x62E9;&#x5668;&#xFF09; &#x6216; <code>bui.$</code>(&#x517C;&#x5BB9;&#x5355;&#x9875;&#x591A;&#x9875;) &#x9009;&#x62E9;&#x5668;.</p>
+</blockquote>
+<pre class="language-"><code class="lang-js"><span class="token comment">// &#x5355;&#x9875;&#x4E0D;&#x5E94;&#x8BE5;&#x8FD9;&#x6837;&#x7ED1;&#x5B9A;</span>
+<span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;.bui-page&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5E94;&#x8BE5;&#x4F7F;&#x7528;</span>
+router<span class="token punctuation">.</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;.bui-page&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;&#x70B9;&#x51FB;&#x4E86;&#x9875;&#x9762;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// &#x5982;&#x679C;&#x4F7F;&#x7528;&#x7EC4;&#x4EF6;&#xFF0C;&#x4E0D;&#x786E;&#x5B9A;&#x5728;&#x5355;&#x9875;&#x591A;&#x9875;&#x4F7F;&#x7528;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528; bui.$</span>
+bui<span class="token punctuation">.</span><span class="token function">$</span><span class="token punctuation">(</span><span class="token string">&quot;.bui-page&quot;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;&#x70B9;&#x51FB;&#x4E86;&#x9875;&#x9762;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9;2017-2022 easybui.com all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2023-11-23 11:27:13
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="dev.html" class="navigation navigation-prev " aria-label="Previous page: 开发方式">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="style.html" class="navigation navigation-next " aria-label="Next page: 样式规范">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"开发规范","level":"1.3.2","depth":2,"next":{"title":"样式规范","level":"1.3.3","depth":2,"path":"chapter1/style.md","ref":"chapter1/style.md","articles":[]},"previous":{"title":"开发方式","level":"1.3.1","depth":2,"path":"chapter1/dev.md","ref":"chapter1/dev.md","articles":[]},"dir":"ltr"},"config":{"plugins":["prism","copy-code-button","search-pro","-search","-lunr","expandable-chapters","splitter","-sharing","github-buttons","tbfed-pagefooter","baidu-tongji","anchor-navigation-ex","chapter-fold"],"styles":{"website":"./static/css/gitbook.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy2017-2022 easybui.com","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"prism":{"css":["prismjs/themes/prism-tomorrow.min.css"],"lang":{"shell":"bash"}},"baidu-tongji":{"url":"https://hm.baidu.com/hm.js","token":"6781b936303667306495d5d92ad58add"},"splitter":{},"search-pro":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"fa fa-hand-o-right","level2Icon":"fa fa-hand-o-right","level3Icon":"fa fa-hand-o-right","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"github-buttons":{"buttons":[{"user":"imouou","repo":"BUI-Guide","type":"star","count":true,"size":"small"},{"user":"imouou","width":"160","type":"follow","count":true,"size":"small"}]},"copy-code-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"王小o - imouou","pdf":{"pageBreaksBefore":"/","headerTemplate":null,"paperSize":"a4","margin":{"right":62,"left":62,"top":36,"bottom":36},"fontSize":12,"fontFamily":"Arial","footerTemplate":null,"chapterMark":"pagebreak","pageNumbers":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"BUI官方文档","language":"zh-hans","links":{},"gitbook":"*","description":"BUI 是一个专注移动快速开发的跨平台 UI 框架，基于文件路径式的单页路由和组件加载，开箱零配置，简单上手，完美嵌入各平台或打包 APP，适合独立开发各种 Webapp，App，轻应用，小程序，公众号，聆客，钉钉……"},"file":{"path":"chapter1/standard.md","mtime":"2023-11-23T03:27:13.770Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2025-01-07T02:41:07.134Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-baidu-tongji/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

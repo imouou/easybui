@@ -1,0 +1,31 @@
+<style>
+    input:disabled {
+        background: #efefef;
+        border: 1px solid #ddd;
+    }
+</style>
+<div class="bui-page">
+    <header class="bui-bar">
+        <div class="bui-bar-left">
+            <a class="bui-btn" onclick="bui.back();"><i class="icon-back"></i></a>
+        </div>
+        <div class="bui-bar-main">属性绑定</div>
+        <div class="bui-bar-right">
+        </div>
+    </header>
+    <main class="container-xy">
+
+        <div class="section-title">1. 属性绑定</div>
+        <p b-bind="page.attrs">批量绑定属性</p>
+        <p b-bind-title="page.attrs.title">单个绑定属性</p>
+
+        <div class="section-title">2. 自定义属性绑定 b-data-title</div>
+        <p b-data-title="page.attrs.title">自定义属性 title</p>
+
+        <div class="section-title">3. 样式绑定</div>
+        <p b-style="page.style">批量绑定样式</p>
+        <p b-style-color="page.color" b-style-border="page.style.border">单个样式</p>
+        <p b-style-max-height="page.height">单个样式高度</p>
+
+    </main>
+</div>
